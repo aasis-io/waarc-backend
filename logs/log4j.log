@@ -4532,7 +4532,7 @@
 [INFO ] 2026-01-07 14:31:57.074  DataBaseSourceClass:53 - Creating new db instance
 [INFO ] 2026-01-07 14:31:58.948  UserServiceImplementation:45 - Checking the application.properties !
 [INFO ] 2026-01-07 14:31:58.949  UserServiceImplementation:55 - application.properties found !
-[INFO ] 2026-01-07 14:32:05.152  ServiceServiceImpl:24 - Getting All services!
+[INFO ] 2026-01-07 14:32:05.152  ServiceServiceImpl:24 - Getting All siteSettings!
 [INFO ] 2026-01-07 14:32:05.168  ServiceRepositoryImplementation:59 - Fetching Services
 [INFO ] 2026-01-07 14:32:05.176  ServiceRepositoryImplementation:59 - Fetching Services
 [INFO ] 2026-01-07 14:32:05.178  ServiceRepositoryImplementation:59 - Fetching Services
@@ -4543,7 +4543,7 @@
 [INFO ] 2026-01-07 14:34:58.495  DataBaseSourceClass:53 - Creating new db instance
 [INFO ] 2026-01-07 14:35:01.152  UserServiceImplementation:45 - Checking the application.properties !
 [INFO ] 2026-01-07 14:35:01.152  UserServiceImplementation:55 - application.properties found !
-[INFO ] 2026-01-07 14:35:02.523  ServiceServiceImpl:24 - Getting All services!
+[INFO ] 2026-01-07 14:35:02.523  ServiceServiceImpl:24 - Getting All siteSettings!
 [INFO ] 2026-01-07 14:35:16.928  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-07 14:35:43.142  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-07 14:35:47.517  ServiceRepositoryImplementation:60 - Fetching Services
@@ -4554,7 +4554,7 @@
 [INFO ] 2026-01-07 14:36:52.124  DataBaseSourceClass:53 - Creating new db instance
 [INFO ] 2026-01-07 14:36:53.640  UserServiceImplementation:45 - Checking the application.properties !
 [INFO ] 2026-01-07 14:36:53.641  UserServiceImplementation:55 - application.properties found !
-[INFO ] 2026-01-07 14:36:56.852  ServiceServiceImpl:24 - Getting All services!
+[INFO ] 2026-01-07 14:36:56.852  ServiceServiceImpl:24 - Getting All siteSettings!
 [INFO ] 2026-01-07 14:36:56.865  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-07 14:36:56.867  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-07 14:36:56.869  ServiceRepositoryImplementation:60 - Fetching Services
@@ -4572,20 +4572,20 @@
 [INFO ] 2026-01-07 14:42:55.008  ServiceRepositoryImplementation:33 - Fetching Services
 [INFO ] 2026-01-07 14:42:55.008  ServiceServiceImpl:37 - Updating Service with id : 
 [INFO ] 2026-01-07 14:42:55.032  ServiceRepositoryImplementation:134 - Service updated successfully !
-[INFO ] 2026-01-07 14:43:07.555  ServiceServiceImpl:24 - Getting All services!
+[INFO ] 2026-01-07 14:43:07.555  ServiceServiceImpl:24 - Getting All siteSettings!
 [INFO ] 2026-01-07 14:43:07.563  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-07 14:43:07.563  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-07 14:43:07.563  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-07 14:43:17.100  ServiceRepositoryImplementation:33 - Fetching Services
 [INFO ] 2026-01-07 14:43:17.106  ServiceServiceImpl:18 - Getting Service for id:
 [INFO ] 2026-01-07 14:43:47.809  ServiceRepositoryImplementation:33 - Fetching Services
-[INFO ] 2026-01-07 14:43:47.813  ServiceServiceImpl:44 - Deleting service with id : 
-[INFO ] 2026-01-07 14:43:56.112  ServiceServiceImpl:24 - Getting All services!
+[INFO ] 2026-01-07 14:43:47.813  ServiceServiceImpl:44 - Deleting siteSetting with id :
+[INFO ] 2026-01-07 14:43:56.112  ServiceServiceImpl:24 - Getting All siteSettings!
 [INFO ] 2026-01-07 14:43:56.114  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-07 14:43:56.120  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-07 14:44:08.218  ServiceRepositoryImplementation:33 - Fetching Services
-[INFO ] 2026-01-07 14:44:08.218  ServiceServiceImpl:44 - Deleting service with id : 
-[INFO ] 2026-01-07 14:44:13.213  ServiceServiceImpl:24 - Getting All services!
+[INFO ] 2026-01-07 14:44:08.218  ServiceServiceImpl:44 - Deleting siteSetting with id :
+[INFO ] 2026-01-07 14:44:13.213  ServiceServiceImpl:24 - Getting All siteSettings!
 [INFO ] 2026-01-07 14:44:13.213  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-07 15:30:21.039  DataLoader:31 - Checking the application.properties !
 [INFO ] 2026-01-07 15:30:21.047  DataLoader:40 - application.properties found !
@@ -4943,7 +4943,7 @@
 [INFO ] 2026-01-08 16:36:58.922  DataBaseSourceClass:53 - Creating new db instance
 [INFO ] 2026-01-08 16:37:00.790  UserServiceImplementation:45 - Checking the application.properties !
 [INFO ] 2026-01-08 16:37:00.793  UserServiceImplementation:55 - application.properties found !
-[INFO ] 2026-01-08 16:37:56.453  ServiceServiceImpl:24 - Getting All services!
+[INFO ] 2026-01-08 16:37:56.453  ServiceServiceImpl:24 - Getting All siteSettings!
 [INFO ] 2026-01-08 16:37:56.461  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-08 16:37:56.461  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-08 16:37:56.470  ServiceRepositoryImplementation:60 - Fetching Services
@@ -5012,14 +5012,14 @@
 [INFO ] 2026-01-09 10:40:56.263  DataBaseSourceClass:53 - Creating new db instance
 [INFO ] 2026-01-09 10:40:57.607  UserServiceImplementation:45 - Checking the application.properties !
 [INFO ] 2026-01-09 10:40:57.608  UserServiceImplementation:55 - application.properties found !
-[INFO ] 2026-01-09 10:41:02.051  ServiceServiceImpl:24 - Getting All services!
+[INFO ] 2026-01-09 10:41:02.051  ServiceServiceImpl:24 - Getting All siteSettings!
 [INFO ] 2026-01-09 10:41:02.073  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-09 10:41:02.075  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-09 10:41:02.076  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-09 10:41:25.207  UserServiceImplementation:124 - User Logged In
 [INFO ] 2026-01-09 10:41:43.316  ServiceServiceImpl:30 - Creating new Service !
 [INFO ] 2026-01-09 10:41:43.339  ServiceRepositoryImplementation:96 - Creating a new Service
-[INFO ] 2026-01-09 10:41:48.724  ServiceServiceImpl:24 - Getting All services!
+[INFO ] 2026-01-09 10:41:48.724  ServiceServiceImpl:24 - Getting All siteSettings!
 [INFO ] 2026-01-09 10:41:48.728  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-09 10:41:48.729  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-09 10:41:48.729  ServiceRepositoryImplementation:60 - Fetching Services
@@ -5027,8 +5027,8 @@
 [INFO ] 2026-01-09 10:42:12.708  ServiceRepositoryImplementation:33 - Fetching Services
 [INFO ] 2026-01-09 10:42:12.710  ServiceServiceImpl:18 - Getting Service for id:
 [INFO ] 2026-01-09 10:42:43.956  ServiceRepositoryImplementation:33 - Fetching Services
-[INFO ] 2026-01-09 10:42:43.957  ServiceServiceImpl:44 - Deleting service with id : 
-[INFO ] 2026-01-09 10:42:49.248  ServiceServiceImpl:24 - Getting All services!
+[INFO ] 2026-01-09 10:42:43.957  ServiceServiceImpl:44 - Deleting siteSetting with id :
+[INFO ] 2026-01-09 10:42:49.248  ServiceServiceImpl:24 - Getting All siteSettings!
 [INFO ] 2026-01-09 10:42:49.250  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-09 10:42:49.251  ServiceRepositoryImplementation:60 - Fetching Services
 [INFO ] 2026-01-09 10:42:49.251  ServiceRepositoryImplementation:60 - Fetching Services
@@ -5131,3 +5131,193 @@
 [INFO ] 2026-01-09 11:12:28.655  DataBaseSourceClass:53 - Creating new db instance
 [INFO ] 2026-01-09 11:12:29.873  UserServiceImplementation:45 - Checking the application.properties !
 [INFO ] 2026-01-09 11:12:29.874  UserServiceImplementation:55 - application.properties found !
+[INFO ] 2026-01-16 12:13:04.150  DataLoader:31 - Checking the application.properties !
+[INFO ] 2026-01-16 12:13:04.167  DataLoader:40 - application.properties found !
+[INFO ] 2026-01-16 12:13:04.224  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2026-01-16 12:13:04.225  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2026-01-16 12:13:04.225  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2026-01-16 12:13:05.935  UserServiceImplementation:45 - Checking the application.properties !
+[INFO ] 2026-01-16 12:13:05.935  UserServiceImplementation:55 - application.properties found !
+[INFO ] 2026-01-16 12:59:45.389  DataLoader:31 - Checking the application.properties !
+[INFO ] 2026-01-16 12:59:45.397  DataLoader:40 - application.properties found !
+[INFO ] 2026-01-16 12:59:45.400  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2026-01-16 12:59:45.400  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2026-01-16 12:59:45.401  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2026-01-16 12:59:47.199  UserServiceImplementation:45 - Checking the application.properties !
+[INFO ] 2026-01-16 12:59:47.200  UserServiceImplementation:55 - application.properties found !
+[INFO ] 2026-01-16 13:00:19.900  DataLoader:31 - Checking the application.properties !
+[INFO ] 2026-01-16 13:00:19.905  DataLoader:40 - application.properties found !
+[INFO ] 2026-01-16 13:00:19.908  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2026-01-16 13:00:19.910  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2026-01-16 13:00:19.910  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2026-01-16 13:00:21.147  UserServiceImplementation:45 - Checking the application.properties !
+[INFO ] 2026-01-16 13:00:21.147  UserServiceImplementation:55 - application.properties found !
+[INFO ] 2026-01-16 13:00:31.070  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[ERROR] 2026-01-16 13:00:31.077  SiteSettingRepositoryImplementation:44 - Failed to fetch site setting: Column 'linkedin' not found.
+[INFO ] 2026-01-16 13:00:51.435  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:00:51.437  SiteSettingServiceImpl:19 - Getting Site Setting 
+[INFO ] 2026-01-16 13:01:39.760  DataLoader:31 - Checking the application.properties !
+[INFO ] 2026-01-16 13:01:39.765  DataLoader:40 - application.properties found !
+[INFO ] 2026-01-16 13:01:39.767  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2026-01-16 13:01:39.767  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2026-01-16 13:01:39.767  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2026-01-16 13:01:41.055  UserServiceImplementation:45 - Checking the application.properties !
+[INFO ] 2026-01-16 13:01:41.056  UserServiceImplementation:55 - application.properties found !
+[INFO ] 2026-01-16 13:01:47.206  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:01:47.208  SiteSettingServiceImpl:19 - Getting Site Setting 
+[INFO ] 2026-01-16 13:05:22.912  DataLoader:31 - Checking the application.properties !
+[INFO ] 2026-01-16 13:05:22.918  DataLoader:40 - application.properties found !
+[INFO ] 2026-01-16 13:05:22.921  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2026-01-16 13:05:22.921  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2026-01-16 13:05:22.922  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2026-01-16 13:05:24.145  UserServiceImplementation:45 - Checking the application.properties !
+[INFO ] 2026-01-16 13:05:24.146  UserServiceImplementation:55 - application.properties found !
+[INFO ] 2026-01-16 13:05:32.893  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:05:32.896  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:06:08.557  UserServiceImplementation:124 - User Logged In
+[INFO ] 2026-01-16 13:09:11.269  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:09:11.272  SiteSettingServiceImpl:30 - Updating Site Setting
+[INFO ] 2026-01-16 13:09:11.278  SiteSettingRepositoryImplementation:71 - Site Setting updated successfully!
+[INFO ] 2026-01-16 13:09:16.594  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:09:16.596  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:22:14.356  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:22:14.359  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:22:20.328  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:22:20.329  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:22:28.323  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:22:28.324  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:22:32.338  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:22:32.338  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:22:37.619  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:22:37.620  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:22:37.627  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:22:37.628  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:24:42.351  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:24:42.353  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:24:44.337  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:24:44.337  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:24:53.893  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:24:53.893  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:25:10.334  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:25:10.335  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:26:51.503  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:26:51.506  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:26:51.506  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:26:51.506  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:27:01.719  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:27:01.721  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:27:17.336  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:27:17.337  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:27:23.330  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:27:23.330  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:27:33.242  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:27:33.243  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:27:56.313  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:27:56.313  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:28:00.320  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:28:00.320  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:28:04.731  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:28:04.732  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:28:04.738  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:28:04.738  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:28:18.903  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:28:18.904  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:28:53.150  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:28:53.151  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:28:53.156  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:28:53.157  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:28:53.855  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:28:53.856  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:28:56.019  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:28:56.019  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:28:56.024  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:28:56.025  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:29:23.334  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:29:23.337  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:29:23.342  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:29:23.342  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:30:18.348  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:30:18.351  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:30:23.460  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:30:23.462  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:30:23.467  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:30:23.468  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:30:30.813  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:30:30.813  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:30:30.818  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:30:30.819  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:30:34.768  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:30:34.768  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:30:34.772  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:30:34.773  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:31:42.536  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:31:42.537  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:31:42.538  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:31:42.538  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:33:31.635  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:33:31.637  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:33:31.642  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:33:31.643  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:33:36.845  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:33:36.845  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 13:33:36.850  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 13:33:36.851  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 21:55:51.145  DataLoader:31 - Checking the application.properties !
+[INFO ] 2026-01-16 21:55:51.152  DataLoader:40 - application.properties found !
+[INFO ] 2026-01-16 21:55:51.156  DataBaseSourceClass:32 - Checking the application.properties !
+[INFO ] 2026-01-16 21:55:51.157  DataBaseSourceClass:42 - application.properties found !
+[INFO ] 2026-01-16 21:55:51.157  DataBaseSourceClass:53 - Creating new db instance
+[INFO ] 2026-01-16 21:55:52.733  UserServiceImplementation:45 - Checking the application.properties !
+[INFO ] 2026-01-16 21:55:52.733  UserServiceImplementation:55 - application.properties found !
+[INFO ] 2026-01-16 21:57:06.061  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 21:57:06.065  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 21:57:06.701  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 21:57:06.702  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:05:47.107  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:05:47.111  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:05:47.119  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:05:47.119  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:26:25.729  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:26:25.731  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:26:25.738  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:26:25.738  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:28:28.193  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:28:28.195  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:28:28.204  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:28:28.205  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:28:28.948  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:28:28.949  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:28:28.956  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:28:28.957  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:37:31.454  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:37:31.457  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:37:31.463  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:37:31.464  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:37:34.366  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:37:34.367  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:37:34.372  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:37:34.373  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:37:36.891  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:37:36.892  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:37:36.899  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:37:36.900  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:38:19.295  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:38:19.296  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:38:19.297  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:38:19.298  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:38:41.042  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:38:41.042  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:38:41.047  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:38:41.048  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:39:10.106  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:39:10.107  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:39:10.111  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:39:10.112  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:40:53.418  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:40:53.420  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:40:53.426  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:40:53.427  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:41:00.289  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:41:00.290  SiteSettingServiceImpl:20 - Getting Site Setting 
+[INFO ] 2026-01-16 22:41:00.294  SiteSettingRepositoryImplementation:29 - Fetching Site Setting
+[INFO ] 2026-01-16 22:41:00.295  SiteSettingServiceImpl:20 - Getting Site Setting 

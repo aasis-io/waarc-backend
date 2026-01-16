@@ -13,6 +13,8 @@ import com.waarc.eventRegistration.EventRegistrationController;
 import com.waarc.exception.AppExceptionHandler;
 import com.waarc.plan.PlanController;
 import com.waarc.service.ServiceController;
+import com.waarc.siteSetting.SiteSetting;
+import com.waarc.siteSetting.SiteSettingController;
 import com.waarc.subscriber.SubscribeController;
 import com.waarc.user.UserController;
 import com.waarc.work.WorkController;
@@ -69,6 +71,7 @@ public class Waarc {
         new EventRegistrationController(app);
         new PlanController(app);
         new WorkController(app);
+        new SiteSettingController(app);
         new AppExceptionHandler(app);
 
     }
