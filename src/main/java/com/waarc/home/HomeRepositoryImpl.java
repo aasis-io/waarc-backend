@@ -78,7 +78,7 @@ public class HomeRepositoryImpl implements HomeRepository {
             stmt.setString(1, request.getBannerImage());
             stmt.setString(2, request.getTitle());
             stmt.setString(3, request.getDescription());
-            stmt.setString(4, request.getMetaDescription());
+            stmt.setString(4, request.getMetaTitle());
             stmt.setString(5, request.getMetaKeywords());
             stmt.setString(6, request.getMetaDescription());
             stmt.setInt(7,1);

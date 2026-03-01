@@ -22,6 +22,8 @@ public class AppConfig {
             
             if(allowedOrigins.contains(requestedOrigin)) {
                 ctx.header("Access-Control-Allow-Origin", requestedOrigin);
+                ctx.header("Access-Control-Allow-Credentials", "true");
+
             }
             
             ctx.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
