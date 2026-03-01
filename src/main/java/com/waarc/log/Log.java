@@ -24,11 +24,7 @@ public class Log {
         CONFIG
     }
 
-    public Log(Status status, Section section, String description) {
-        this.status = status;
-        this.section = section;
-        this.description = description;
-    }
+
 
     @Override
     public String toString() {

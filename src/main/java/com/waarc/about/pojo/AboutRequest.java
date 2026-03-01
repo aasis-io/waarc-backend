@@ -1,43 +1,21 @@
 package com.waarc.about.pojo;
 
-public class AboutRequest {
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-    private String image;
-    private String title;
+/**
+ * @author <sachin.singh@moco.com.np>
+ * @created on : 01-03-2026 12:57
+ */
+@AllArgsConstructor
+@Getter
+@Setter
+@NoArgsConstructor
+public class AboutRequest {
+    private int id;
     private String description;
 
-    public String getImage() {
-        return image;
-    }
 
-    public void setImage(String image) {
-        this.image = image;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public AboutRequest(String image, String title, String description) {
-        this.image = image;
-        this.title = title;
-        this.description = description;
-
-    }
-
-    public AboutRequest() {
-
-    }
 }

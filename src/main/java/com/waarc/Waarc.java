@@ -11,6 +11,7 @@ import com.waarc.config.Config;
 import com.waarc.dataLoader.DataLoader;
 import com.waarc.eventRegistration.EventRegistrationController;
 import com.waarc.exception.AppExceptionHandler;
+import com.waarc.home.HomeController;
 import com.waarc.plan.PlanController;
 import com.waarc.service.ServiceController;
 
@@ -67,6 +68,7 @@ public class Waarc {
         });
 
         new AppConfig(app);
+        new HomeController(app);
         new UserController(app);
         new ServiceController(app);
         new SubscribeController(app);

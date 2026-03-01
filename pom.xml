@@ -149,11 +149,12 @@
             <version>1.30.0</version>
         </dependency>
 
+        <!-- Source: https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.30</version> <!-- or latest -->
-
+            <version>1.18.42</version>
+            <scope>provided</scope>
         </dependency>
 
     </dependencies>
@@ -173,9 +174,15 @@
                             <artifactId>openapi-annotation-processor</artifactId>
                             <version>${javalin.version}</version>
                         </annotationProcessorPath>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>1.18.42</version>
+                        </path>
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 </project>
