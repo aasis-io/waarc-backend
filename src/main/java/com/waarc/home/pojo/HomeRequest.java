@@ -14,7 +14,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class HomeRequest {
-  private int id;
+
   private String bannerImage;
   private String title;
   private String description;

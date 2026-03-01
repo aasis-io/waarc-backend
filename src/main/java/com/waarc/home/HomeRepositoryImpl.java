@@ -10,6 +10,7 @@ import org.apache.commons.logging.LogFactory;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.Optional;
 
 public class HomeRepositoryImpl implements HomeRepository {
     private static final Log LOG = LogFactory.getLog(HomeRepositoryImpl.class);
@@ -24,8 +25,7 @@ public class HomeRepositoryImpl implements HomeRepository {
             if (rs.next()) {
                 LOG.info("Getting Home !");
                   return Home.builder(
-                 ).id(rs.getInt("id"))
-                         .bannerImage(rs.getString("banner_image"))
+                 ).bannerImage(rs.getString("banner_image"))
                          .description(rs.getString("page_sub_title"))
                          .metaTitle(rs.getString("seo_title"))
                          .metaKeywords(rs.getString("seo_keywords"))
@@ -45,7 +45,7 @@ public class HomeRepositoryImpl implements HomeRepository {
     @Override
     public String save(HomeRequest request) {
 
-        String sql = "INSERT INTO Home (banner_image,page_title,page_sub_title,seo_title,seo_keywords,seo_description) values (?,?,?,?,?,?)";
+        String sql = "INSERT INTO Home (banner_image,page_title,page_sub_title,seo_title,seo_keywords,seo_description,id) values (?,?,?,?,?,?,?)";
         try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql);) {
 
@@ -55,6 +55,7 @@ public class HomeRepositoryImpl implements HomeRepository {
             stmt.setString(4, request.getMetaTitle());
             stmt.setString(5, request.getMetaKeywords());
             stmt.setString(6, request.getMetaDescription());
+            stmt.setInt(7, 1);
 
             int affectedRow = stmt.executeUpdate();
             if (!(affectedRow > 0)) {
@@ -69,7 +70,7 @@ public class HomeRepositoryImpl implements HomeRepository {
     }
 
     @Override
-    public String updateHome(HomeRequest request,int id) {
+    public String updateHome(HomeRequest request) {
 
         String sql = "UPDATE Home SET banner_image = ?, page_title = ?, page_sub_title = ?, seo_title = ?, seo_keywords = ?, seo_description = ? WHERE id = ?";
         try (Connection conn = DbConnection.getCon(); PreparedStatement stmt = conn.prepareStatement(sql);) {
@@ -79,7 +80,7 @@ public class HomeRepositoryImpl implements HomeRepository {
             stmt.setString(4, request.getMetaDescription());
             stmt.setString(5, request.getMetaKeywords());
             stmt.setString(6, request.getMetaDescription());
-            stmt.setInt(7, id);
+            stmt.setInt(7,1);
 
             int affectedRow = stmt.executeUpdate();
             if (!(affectedRow > 0)) {
@@ -94,5 +95,29 @@ public class HomeRepositoryImpl implements HomeRepository {
             throw new OperationFailedException(e.getMessage(), 500);
         }
 
+    }
+
+    @Override
+    public Optional<Home> getHomeById(String id) {
+        String sql = "SELECT * FROM Home ";
+        try (Connection connection = DbConnection.getCon();
+             PreparedStatement stmt = connection.prepareStatement(sql)) {
+
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) {
+                return Optional.ofNullable(Home.builder(
+                        ).bannerImage(rs.getString("banner_image"))
+                        .description(rs.getString("page_sub_title"))
+                        .metaTitle(rs.getString("seo_title"))
+                        .metaKeywords(rs.getString("seo_keywords"))
+                        .metaDescription(rs.getString("seo_description"))
+                        .build());
+            } else {
+                 return Optional.empty();
+            }
+        } catch (Exception e) {
+            LOG.error("Failed to get Home !" + e.getMessage());
+            throw new OperationFailedException(e.getMessage(), 500);
+        }
     }
 }

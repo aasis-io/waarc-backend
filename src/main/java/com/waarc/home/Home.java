@@ -8,7 +8,7 @@ import lombok.*;
 @Setter
 @Builder
 public class Home {
-    private int id;
+
     private String bannerImage;
     private String title;
     private String description;

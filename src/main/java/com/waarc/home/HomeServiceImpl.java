@@ -16,6 +16,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
+import java.util.Map;
+import java.util.Optional;
 import java.util.UUID;
 
 
@@ -148,15 +150,11 @@ public class HomeServiceImpl implements HomeService {
     @Override
     public String updateHome(Context ctx) {
         ctx.contentType("application/json");
+        LOG.info("Upserting Home!");
 
         try {
             // 1️⃣ Fetch existing home data
-            Home home = homerepository.getHome();
-            if (home == null) {
-                ctx.status(404);
-                return "Home not Found";
-            }
-            LOG.info("Updating Home!");
+            Optional<Home> existingHome = homerepository.getHomeById("1");
 
             // 2️⃣ Read form fields
             String title = ctx.formParam("title");
@@ -165,28 +163,21 @@ public class HomeServiceImpl implements HomeService {
             String metaKeywords = ctx.formParam("metaKeywords");
             String metaDescription = ctx.formParam("metaDescription");
 
-            // 3️⃣ Validate required fields
-            if (title == null || title.trim().isEmpty()) {
-                ctx.status(400);
-                return "Bad Request: title is required";
-            }
-            if (description == null || description.trim().isEmpty()) {
-                ctx.status(400);
-                return "Bad Request: description is required";
-            }
-            if (metaTitle == null || metaTitle.trim().isEmpty()) {
-                ctx.status(400);
-                return "Bad Request: metaTitle is required";
-            }
-            if (metaKeywords == null || metaKeywords.trim().isEmpty()) {
-                ctx.status(400);
-                return "Bad Request: metaKeywords is required";
-            }
-            if (metaDescription == null || metaDescription.trim().isEmpty()) {
-                ctx.status(400);
-                return "Bad Request: metaDescription is required";
-            }
+            // 3️⃣ Validate all required fields
+            Map<String, String> fields = Map.of(
+                    "title", title,
+                    "description", description,
+                    "metaTitle", metaTitle,
+                    "metaKeywords", metaKeywords,
+                    "metaDescription", metaDescription
+            );
 
+            for (Map.Entry<String, String> entry : fields.entrySet()) {
+                if (entry.getValue() == null || entry.getValue().trim().isEmpty()) {
+                    ctx.status(400);
+                    return "Bad Request: " + entry.getKey() + " is required";
+                }
+            }
             // 4️⃣ Prepare request object
             HomeRequest request = new HomeRequest();
             request.setTitle(title);
@@ -195,61 +186,61 @@ public class HomeServiceImpl implements HomeService {
             request.setMetaKeywords(metaKeywords);
             request.setMetaDescription(metaDescription);
 
-            // 5️⃣ Handle file upload (optional, if user uploads a new image)
+            // 5️⃣ Handle file upload (optional)
             UploadedFile file = ctx.uploadedFile("image");
             if (file != null) {
-                // 5a️⃣ Validate file type
                 String contentType = file.contentType();
                 if (contentType == null || !contentType.startsWith("image/")) {
                     ctx.status(400);
                     return "Invalid file type, only images allowed";
                 }
 
-                // 5b️⃣ Validate file size (max 10MB)
                 if (file.size() > 10 * 1024 * 1024) {
                     ctx.status(400);
                     return "Maximum image size is 10MB";
                 }
 
-                // 5c️⃣ Generate safe filename
                 String extension = file.filename().substring(file.filename().lastIndexOf("."));
                 String fileName = UUID.randomUUID() + extension;
 
-                // 5d️⃣ Create uploads directory if it doesn't exist
                 Path uploadDir = Paths.get("uploads");
                 Files.createDirectories(uploadDir);
 
-                // 5e️⃣ Delete old image if exists
-                String oldImagePath = home.getBannerImage();
-                if (oldImagePath != null && !oldImagePath.isBlank()) {
-                    Path oldFile = Paths.get(oldImagePath);
+                // Delete old image if exists
+                if (existingHome.isPresent() && existingHome.get().getBannerImage() != null
+                        && !existingHome.get().getBannerImage().isBlank()) {
+                    Path oldFile = Paths.get(existingHome.get().getBannerImage());
                     try {
                         Files.deleteIfExists(oldFile);
-                        LOG.info("Deleted old image: " + oldImagePath);
+                        LOG.info("Deleted old image: " + existingHome.get().getBannerImage());
                     } catch (IOException e) {
-                        LOG.warn("Failed to delete old image: " + oldImagePath, e);
+                        LOG.warn("Failed to delete old image: " + existingHome.get().getBannerImage(), e);
                     }
                 }
 
-                // 5f️⃣ Save new image
+                // Save new image
                 Path filePath = uploadDir.resolve(fileName);
                 try (InputStream is = file.content()) {
                     Files.copy(is, filePath, StandardCopyOption.REPLACE_EXISTING);
                 }
                 request.setBannerImage(filePath.toString());
-            } else {
-                // Keep old image if no new file is uploaded
-                request.setBannerImage(home.getBannerImage());
+            } else if (existingHome != null) {
+                // Keep old image if exists
+                request.setBannerImage(existingHome.get().getBannerImage());
             }
 
-            // 6️⃣ Update home in repository
-            return homerepository.updateHome(request, home.getId());
+            // 6️⃣ Upsert: Create if not exists, else update
+            if (existingHome.isEmpty()) {
+                LOG.info("Home not found, creating new home...");
+                return homerepository.save(request);
+            } else {
+                LOG.info("Updating existing home...");
+                return homerepository.updateHome(request);
+            }
 
-        } catch (ResourceNotFoundException e) {
-            ctx.status(404);
-            return "Home not Found";
         } catch (Exception e) {
             ctx.status(500);
+            LOG.error("Error upserting home: " + e.getMessage(), e);
             return "Error: " + e.getMessage();
         }
     }

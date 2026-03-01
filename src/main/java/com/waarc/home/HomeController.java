@@ -10,11 +10,6 @@ public class HomeController {
     public HomeController(Javalin app){
         app.before("/Home", AuthMiddleWare.requireLogin);
 
-        app.post("/home",ctx -> {
-            ctx.json(service.save(ctx));
-        });
-
-
         app.get("/getHome",ctx -> {
            ctx.json(service.getHome(ctx));
         });
