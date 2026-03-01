@@ -194,3 +194,14 @@ com.waarc.exception.ResourceNotFoundException: Home not found
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-01 17:13:34.754 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 17:13:34.861 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeServiceImpl updateHome: line 234 - Home not found, creating new home...
+2026-03-01 17:13:46.734 NPT [JettyServerThreadPool-42] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:14:12.167 NPT [JettyServerThreadPool-45] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:18:00.348 NPT [JettyServerThreadPool-42] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 17:18:00.367 NPT [JettyServerThreadPool-42] INFO  com.waarc.home.HomeServiceImpl updateHome: line 215 - Deleted old image: uploads\4c6a8b4d-f08d-4443-b49a-9c80ebca15b5.png
+2026-03-01 17:18:00.378 NPT [JettyServerThreadPool-42] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
+2026-03-01 17:18:00.383 NPT [JettyServerThreadPool-42] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 90 - Home updated SuccessFul !
+2026-03-01 17:19:35.420 NPT [JettyServerThreadPool-45] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:19:36.659 NPT [JettyServerThreadPool-42] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:19:38.619 NPT [JettyServerThreadPool-45] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !

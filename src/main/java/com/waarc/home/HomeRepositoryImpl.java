@@ -17,7 +17,7 @@ public class HomeRepositoryImpl implements HomeRepository {
 
     @Override
     public Home getHome() {
-        String sql = "SELECT * FROM Home ";
+        String sql = "SELECT * FROM Home where id=1 ";
         try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
 
