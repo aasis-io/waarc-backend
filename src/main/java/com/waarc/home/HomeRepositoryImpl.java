@@ -26,6 +26,7 @@ public class HomeRepositoryImpl implements HomeRepository {
                 LOG.info("Getting Home !");
                   return Home.builder(
                  ).bannerImage(rs.getString("banner_image"))
+                          .title(rs.getString("page_title"))
                          .description(rs.getString("page_sub_title"))
                          .metaTitle(rs.getString("seo_title"))
                          .metaKeywords(rs.getString("seo_keywords"))
