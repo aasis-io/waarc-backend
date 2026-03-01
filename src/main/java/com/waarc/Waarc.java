@@ -36,7 +36,6 @@ public class Waarc {
     }
 
     public static void main(String[] args) {
-
         DataLoader dataLoader = new DataLoader();
         dataLoader.load();
 
@@ -47,8 +46,6 @@ public class Waarc {
                 staticFileConfig.directory = "uploads";   // folder on disk
                 staticFileConfig.location = Location.EXTERNAL; // external folder
             });
-
-
         }).start(SERVER_PORT);
 
         app.exception(ValidationException.class, (e, ctx) -> {
