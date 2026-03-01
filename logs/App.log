@@ -205,3 +205,6 @@ com.waarc.exception.ResourceNotFoundException: Home not found
 2026-03-01 17:19:35.420 NPT [JettyServerThreadPool-45] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
 2026-03-01 17:19:36.659 NPT [JettyServerThreadPool-42] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
 2026-03-01 17:19:38.619 NPT [JettyServerThreadPool-45] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:20:39.964 NPT [JettyServerThreadPool-50] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:20:41.595 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:20:46.915 NPT [JettyServerThreadPool-40] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
