@@ -1,8 +1,7 @@
 package com.waarc.siteSetting;
 
-import com.waarc.config.DataBaseSourceClass;
+import com.waarc.config.DbConnection;
 import com.waarc.exception.OperationFailedException;
-import com.waarc.exception.ResourceNotFoundException;
 import com.waarc.siteSetting.pojo.SiteSettingRequest;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -10,9 +9,6 @@ import org.apache.commons.logging.LogFactory;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 public class SiteSettingRepositoryImplementation implements SiteSettingRepository {
@@ -21,7 +17,7 @@ public class SiteSettingRepositoryImplementation implements SiteSettingRepositor
     @Override
     public Optional<SiteSetting> getSiteSetting() {
         String sql = "SELECT * FROM site_setting where id = 1 ";
-        try (Connection connection = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
 
             ResultSet rs = stmt.executeQuery();
@@ -51,7 +47,7 @@ public class SiteSettingRepositoryImplementation implements SiteSettingRepositor
     public SiteSetting updateSiteSetting(SiteSettingRequest request) {
 
         String sql = "UPDATE site_setting SET phone = ?, email = ?, location = ?, facebook = ?, instagram = ?, linkedin = ?, youtube = ? WHERE id = 1";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             stmt.setString(1, request.getPhone());

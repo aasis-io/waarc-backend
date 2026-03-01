@@ -4,7 +4,7 @@
  */
 package com.waarc.user;
 
-import com.waarc.config.DataBaseSourceClass;
+import com.waarc.config.DbConnection;
 
 import com.waarc.exception.OperationFailedException;
 import com.waarc.exception.ResourceNotFoundException;
@@ -36,7 +36,7 @@ public class UserRepositoryImplementation implements UserRepository {
         UserResponse userResponse = new UserResponse();
 
         try (
-                Connection conn = DataBaseSourceClass.getDataSource().getConnection(); PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);) {
+                Connection conn = DbConnection.getCon(); PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);) {
 
             stmt.setString(1, user.getName());
             stmt.setString(2, user.getEmail());
@@ -83,7 +83,7 @@ public class UserRepositoryImplementation implements UserRepository {
 
         Optional<User> user = Optional.empty();
 
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             stmt.setString(1, email);
@@ -113,7 +113,7 @@ public class UserRepositoryImplementation implements UserRepository {
         log.info("Change password initiated");
         String sql = "update user set password = ? where email=?";
 
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql);) {
 
 

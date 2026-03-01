@@ -1,7 +1,7 @@
 package com.waarc.about;
 
 import com.waarc.about.pojo.AboutRequest;
-import com.waarc.config.DataBaseSourceClass;
+import com.waarc.config.DbConnection;
 import com.waarc.exception.OperationFailedException;
 import com.waarc.exception.ResourceNotFoundException;
 import org.apache.commons.logging.Log;
@@ -11,7 +11,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.List;
 import java.util.Optional;
 
 public class AboutRepositoryImplementation implements AboutRepository {
@@ -20,7 +19,7 @@ public class AboutRepositoryImplementation implements AboutRepository {
     @Override
     public Optional<About> getAbout() {
         String sql = "SELECT * FROM about ";
-        try (Connection connection = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
 
             ResultSet rs = stmt.executeQuery();
@@ -44,7 +43,7 @@ public class AboutRepositoryImplementation implements AboutRepository {
     public About save(AboutRequest request) {
 
         String sql = "INSERT INTO about (description) values (?)";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);) {
 
             stmt.setString(1, request.getDescription());
@@ -81,7 +80,7 @@ log.info("About inserted successfully !");
     public About updateAbout(AboutRequest request) {
 
         String sql = "UPDATE about SET description = ? ";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql);) {
 
             stmt.setString(1, request.getDescription());

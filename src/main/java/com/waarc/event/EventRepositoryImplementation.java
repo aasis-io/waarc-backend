@@ -1,6 +1,6 @@
 package com.waarc.event;
 
-import com.waarc.config.DataBaseSourceClass;
+import com.waarc.config.DbConnection;
 import com.waarc.event.pojo.EventRequest;
 import com.waarc.exception.OperationFailedException;
 import com.waarc.exception.ResourceNotFoundException;
@@ -20,7 +20,7 @@ public class EventRepositoryImplementation implements EventRepository {
     @Override
     public Optional<Event> getEvent(int id) {
         String sql = "SELECT * FROM event WHERE id=?";
-        try (Connection connection = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
 
             stmt.setInt(1, id);
@@ -49,7 +49,7 @@ public class EventRepositoryImplementation implements EventRepository {
     public Event save(EventRequest request) {
 
         String sql = "INSERT INTO event (name) values (?)";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);) {
 
             stmt.setString(1, request.getName());
@@ -84,7 +84,7 @@ public class EventRepositoryImplementation implements EventRepository {
     public Event updateEvent(EventRequest request, int serviceId) {
 
         String sql = "UPDATE Service SET name = ? where id = ?";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql);) {
 
             stmt.setString(1, request.getName());
@@ -107,7 +107,7 @@ public class EventRepositoryImplementation implements EventRepository {
     @Override
     public Event deleteEvent(int eventId) {
         String sql = "DELETE FROM event WHERE  id = ?";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql);) {
 
             stmt.setInt(1, eventId);

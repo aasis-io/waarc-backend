@@ -1,7 +1,7 @@
 package com.waarc.blog;
 
 import com.waarc.blog.pojo.BlogRequest;
-import com.waarc.config.DataBaseSourceClass;
+import com.waarc.config.DbConnection;
 import com.waarc.exception.OperationFailedException;
 import com.waarc.exception.ResourceNotFoundException;
 import org.apache.commons.logging.Log;
@@ -19,7 +19,7 @@ public class BlogRepositoryImplementation implements BlogRepository {
     @Override
     public Optional<Blog> getBlog(int id) {
         String sql = "SELECT * FROM Blog WHERE id=?";
-        try (Connection connection = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
 
             stmt.setInt(1, id);
@@ -48,7 +48,7 @@ public class BlogRepositoryImplementation implements BlogRepository {
     public List<Blog> getAllBlogs() {
         String sql = "SELECT * FROM Blog";
         List<Blog> blogs = new ArrayList<>();
-        try (Connection connection = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
 
             ResultSet rs = stmt.executeQuery();
@@ -75,7 +75,7 @@ public class BlogRepositoryImplementation implements BlogRepository {
     public Blog save(BlogRequest request) {
 
         String sql = "INSERT INTO Blog (date,image,title,description) values (?,?,?,?)";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);) {
 
             stmt.setTimestamp(1, Timestamp.valueOf(LocalDateTime.now()));
@@ -117,7 +117,7 @@ log.info("Created a new Blog !");
     public Blog updateBlog(BlogRequest request, int BlogId) {
 
         String sql = "UPDATE Blog SET  date = ?,image = ? , title = ? , description = ? where id = ?";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql);) {
 
             stmt.setTimestamp(1, Timestamp.valueOf(LocalDateTime.now()));
@@ -145,7 +145,7 @@ log.info("Created a new Blog !");
     @Override
     public Blog deleteBlog(int BlogId) {
         String sql = "DELETE FROM blog WHERE  id = ?";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql);) {
 
             stmt.setInt(1, BlogId);

@@ -1,6 +1,6 @@
 package com.waarc.plan;
 
-import com.waarc.config.DataBaseSourceClass;
+import com.waarc.config.DbConnection;
 import com.waarc.exception.OperationFailedException;
 import com.waarc.exception.ResourceNotFoundException;
 import com.waarc.plan.pojo.PlanRequest;
@@ -21,7 +21,7 @@ public class PlanRepositoryImplementation implements PlanRepository {
     @Override
     public Optional<Plan> getplan(int id) {
         String sql = "SELECT * FROM plan WHERE id=?";
-        try (Connection connection = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
 
             stmt.setInt(1, id);
@@ -51,7 +51,7 @@ public class PlanRepositoryImplementation implements PlanRepository {
 
         String sql = "SELECT * FROM plan ";
         List<Plan> plans = new ArrayList<>();
-        try (Connection connection = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
 
             ResultSet rs = stmt.executeQuery();
@@ -78,7 +78,7 @@ public class PlanRepositoryImplementation implements PlanRepository {
     public Plan save(PlanRequest request) {
 
         String sql = "INSERT INTO plan (tag,image,title,description) values (?,?,?,?)";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);) {
 
             stmt.setString(1, request.getTag());
@@ -120,7 +120,7 @@ public class PlanRepositoryImplementation implements PlanRepository {
     public Plan updateplan(PlanRequest request, int planId) {
 
         String sql = "UPDATE plan SET tag = ?, image = ? , title = ? , description = ? where id = ?";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql);) {
 
             stmt.setString(1, request.getTag());
@@ -146,7 +146,7 @@ public class PlanRepositoryImplementation implements PlanRepository {
     @Override
     public Plan deleteplan(int planId) {
         String sql = "DELETE FROM plan WHERE  id = ?";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql);) {
 
             stmt.setInt(1, planId);

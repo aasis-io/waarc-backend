@@ -21,7 +21,7 @@ import java.util.Properties;
  */
 public class EmailService {
 
-    private static final String PROPERTIES_FILE = "application.properties";
+    private static final String PROPERTIES_FILE = "config.properties";
     
     private static final String senderEmail;
     private static final String senderPassword;
@@ -85,7 +85,7 @@ public class EmailService {
         try (InputStream input = EmailService.class.getClassLoader().getResourceAsStream(PROPERTIES_FILE)) {
 
             if (input == null) {
-                throw new ResourceNotFoundException("application.properties not found!");
+                throw new ResourceNotFoundException("config.properties not found!");
             }
 
             prop.load(input);

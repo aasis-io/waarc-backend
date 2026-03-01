@@ -1,7 +1,7 @@
 package com.waarc.user;
 
 import com.waarc.EmailService.EmailService;
-import com.waarc.config.DataBaseSourceClass;
+import com.waarc.config.Config;
 import com.waarc.exception.InvalidCredentialsException;
 import com.waarc.exception.OperationFailedException;
 import com.waarc.exception.ResourceNotFoundException;
@@ -12,15 +12,12 @@ import com.waarc.user.loginPojo.LoginRequest;
 import com.waarc.user.loginPojo.LoginResponse;
 import com.waarc.user.logout.LogoutResponse;
 import com.waarc.user.passwordChange.ChangePasswordRequest;
-import org.apache.commons.dbcp2.BasicDataSource;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.mindrot.jbcrypt.BCrypt;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.Map;
-import java.util.Properties;
+ 
 
 /**
  *
@@ -30,34 +27,7 @@ public class UserServiceImplementation implements UserService {
 
     private final UserRepository userRepository = (UserRepository) new UserRepositoryImplementation();
 
-    private static final Logger log = LogManager.getLogger(UserServiceImplementation.class);
-
-    private static BasicDataSource dataSource;
-
-    private static Properties appProperties;
-
-    private static String  PROPERTIES_FILE ="application.properties";
-
-    static{
-
-        appProperties = new Properties();
-
-        log.info("Checking the application.properties !");
-        try(InputStream input = UserServiceImplementation.class.getClassLoader().getResourceAsStream(PROPERTIES_FILE)){
-
-            if(input == null){
-
-                log.error("application.properties file not found");
-                throw new IOException("IOException occured : "+PROPERTIES_FILE);
-            }
-
-
-            log.info("application.properties found !");
-            appProperties.load(input);
-
-        }catch(Exception ex){
-        }
-    }
+    private static final Logger LOG = LogManager.getLogger(UserServiceImplementation.class);
 
 //
 //    @Override
@@ -121,16 +91,16 @@ public class UserServiceImplementation implements UserService {
                 String accessToken = JwtUtil.generateAcessToken(String.valueOf(user.getId()), claims);
                 String refreshToken = JwtUtil.generateRefreshToken(String.valueOf(user.getId()), claims);
 
-                log.info("User Logged In");
+              LOG.info("User Logged In");
                 return new LoginResponse(accessToken, refreshToken);
 
             } else {
-                log.error("Invalid Email or Password");
+              LOG.error("Invalid Email or Password");
                 throw new InvalidCredentialsException("Invalid Email or Password !");
             }
 
         } catch (Exception e) {
-            log.error("Login Error : "+e.getMessage());
+          LOG.error("Login Error : "+e.getMessage());
             throw new InvalidCredentialsException(e.getMessage());
         }
 
@@ -139,15 +109,15 @@ public class UserServiceImplementation implements UserService {
     @Override
     public UserResponse getUser() {
 
-        User user = userRepository.findByEmail(appProperties.getProperty("AdminEmail")).orElseThrow(()-> new ResourceNotFoundException("Admin Not Found !"));
-        log.info("Getting User info");
+        User user = userRepository.findByEmail(Config.getProperty("Admin_Email")).orElseThrow(()-> new ResourceNotFoundException("Admin Not Found !"));
+      LOG.info("Getting User info");
         return new UserResponse(user.getId(),user.getName(),user.getEmail());
     }
 
 
     @Override
     public LogoutResponse logout() {
-        log.info("User logged out");
+      LOG.info("User logged out");
         return new LogoutResponse("Logout Success!");
 
     }
@@ -163,9 +133,9 @@ public class UserServiceImplementation implements UserService {
             throw new OperationFailedException("Token generation Failed", 500);
         }
 
-        log.info("Sending forget password email...");
+      LOG.info("Sending forget password email...");
         String emailResponse = EmailService.sendEmail(request.getEmail(), emailSignedToken);
-        log.info("Forget Password Email Sent !");
+      LOG.info("Forget Password Email Sent !");
         return emailResponse;
 
     }
@@ -184,7 +154,7 @@ public class UserServiceImplementation implements UserService {
 
         String passwordResponse = userRepository.changePassword(request.getEmail(), hashedPw);
 
-        log.info("Password Changed Successull !");
+      LOG.info("Password Changed Successull !");
         return new UserResponse(
                 user.getId(),
                 user.getName(),
@@ -204,7 +174,7 @@ public class UserServiceImplementation implements UserService {
         String hashedPassword = BCrypt.hashpw(request.getPassword(), BCrypt.gensalt(10));
 
         String passwordResponse = userRepository.changePassword(extractedEmail, hashedPassword);
-        log.info("Reset Password Done!");
+      LOG.info("Reset Password Done!");
 
         return new UserResponse(
                 user.getId(),

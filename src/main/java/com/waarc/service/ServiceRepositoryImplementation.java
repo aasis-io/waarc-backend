@@ -1,11 +1,9 @@
 package com.waarc.service;
 
-import com.cloudinary.api.exceptions.ApiException;
-import com.waarc.config.DataBaseSourceClass;
+import com.waarc.config.DbConnection;
 import com.waarc.exception.OperationFailedException;
 import com.waarc.exception.ResourceNotFoundException;
 import com.waarc.service.pojo.ServiceRequest;
-import com.waarc.user.User;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
@@ -23,7 +21,7 @@ public class ServiceRepositoryImplementation implements ServiceRepository {
     @Override
     public Optional<Service> getService(int id) {
         String sql = "SELECT * FROM service WHERE id=?";
-        try (Connection connection = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
 
             stmt.setInt(1, id);
@@ -51,7 +49,7 @@ public class ServiceRepositoryImplementation implements ServiceRepository {
     public List<Service> getAllServices() {
         String sql = "SELECT * FROM service";
         List<Service> services = new ArrayList<>();
-        try (Connection connection = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
 
             ResultSet rs = stmt.executeQuery();
@@ -77,7 +75,7 @@ public class ServiceRepositoryImplementation implements ServiceRepository {
     public Service save(ServiceRequest request) {
 
         String sql = "INSERT INTO service (image,title,description) values (?,?,?)";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);) {
 
             stmt.setString(1, request.getImage());
@@ -118,7 +116,7 @@ log.info("Creating a new Service");
     public Service updateService(ServiceRequest request, int serviceId) {
 
         String sql = "UPDATE Service SET image = ? , title = ? , description = ? where id = ?";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql);) {
 
             stmt.setString(1, request.getImage());
@@ -143,7 +141,7 @@ log.info("Creating a new Service");
     @Override
     public Service deleteService(int serviceId) {
         String sql = "DELETE FROM service WHERE  id = ?";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql);) {
 
             stmt.setInt(1, serviceId);

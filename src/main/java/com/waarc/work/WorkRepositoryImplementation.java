@@ -1,6 +1,6 @@
 package com.waarc.work;
 
-import com.waarc.config.DataBaseSourceClass;
+import com.waarc.config.DbConnection;
 import com.waarc.exception.OperationFailedException;
 import com.waarc.exception.ResourceNotFoundException;
 import com.waarc.work.pojo.WorkRequest;
@@ -21,7 +21,7 @@ public class WorkRepositoryImplementation implements WorkRepository {
     @Override
     public Optional<Work> getWork(int id) {
         String sql = "SELECT * FROM Work WHERE id=?";
-        try (Connection connection = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
 
             stmt.setInt(1, id);
@@ -50,7 +50,7 @@ public class WorkRepositoryImplementation implements WorkRepository {
     public List<Work> getAllWorks() {
         String sql = "SELECT * FROM Work";
 
-        try (Connection connection = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
 
             ResultSet rs = stmt.executeQuery();
@@ -79,7 +79,7 @@ public class WorkRepositoryImplementation implements WorkRepository {
     public Work save(WorkRequest request) {
 
         String sql = "INSERT INTO Work (tag,image,title,description) values (?,?,?,?)";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);) {
 
             stmt.setString(1,request.getTag());
@@ -122,7 +122,7 @@ public class WorkRepositoryImplementation implements WorkRepository {
     public Work updateWork(WorkRequest request, int WorkId) {
 
         String sql = "UPDATE Work SET tag = ?, image = ? , title = ? , description = ? where id = ?";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql);) {
 
             stmt.setString(1, request.getTag());
@@ -150,7 +150,7 @@ public class WorkRepositoryImplementation implements WorkRepository {
     public Work deleteWork(int WorkId) {
 
         String sql = "DELETE FROM Work WHERE  id = ?";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql);) {
 
             stmt.setInt(1, WorkId);

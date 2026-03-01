@@ -4,16 +4,16 @@
 
 package com.waarc;
 
-
 import com.waarc.about.AboutController;
 import com.waarc.blog.BlogController;
 import com.waarc.config.AppConfig;
+import com.waarc.config.Config;
 import com.waarc.dataLoader.DataLoader;
 import com.waarc.eventRegistration.EventRegistrationController;
 import com.waarc.exception.AppExceptionHandler;
 import com.waarc.plan.PlanController;
 import com.waarc.service.ServiceController;
-import com.waarc.siteSetting.SiteSetting;
+
 import com.waarc.siteSetting.SiteSettingController;
 import com.waarc.subscriber.SubscribeController;
 import com.waarc.user.UserController;
@@ -21,6 +21,7 @@ import com.waarc.work.WorkController;
 import io.javalin.Javalin;
 import io.javalin.http.staticfiles.Location;
 import io.javalin.validation.ValidationException;
+import org.apache.logging.log4j.core.config.Configurator;
 
 import java.util.Map;
 
@@ -28,6 +29,10 @@ import java.util.Map;
  * @author sachi
  */
 public class Waarc {
+    private static final int SERVER_PORT = Integer.parseInt(Config.getProperty("server.port"));
+    static {
+        Configurator.initialize(null, "etc/log4j2.properties");
+    }
 
     public static void main(String[] args) {
 
@@ -36,7 +41,6 @@ public class Waarc {
 
         var app = Javalin.create(config -> {
 
-
             config.staticFiles.add(staticFileConfig -> {
                 staticFileConfig.hostedPath = "/uploads"; // URL prefix
                 staticFileConfig.directory = "uploads";   // folder on disk
@@ -44,7 +48,7 @@ public class Waarc {
             });
 
 
-        }).start(7071);
+        }).start(SERVER_PORT);
 
         app.exception(ValidationException.class, (e, ctx) -> {
 

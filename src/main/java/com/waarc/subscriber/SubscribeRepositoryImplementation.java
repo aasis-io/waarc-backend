@@ -1,6 +1,6 @@
 package com.waarc.subscriber;
 
-import com.waarc.config.DataBaseSourceClass;
+import com.waarc.config.DbConnection;
 import com.waarc.exception.OperationFailedException;
 import com.waarc.exception.ResourceNotFoundException;
 import com.waarc.subscriber.pojo.SubscribeRequest;
@@ -13,7 +13,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class SubscribeRepositoryImplementation implements SubscribeRepository {
     private static final Log log = LogFactory.getLog(SubscribeRepositoryImplementation.class);
@@ -22,8 +21,8 @@ public class SubscribeRepositoryImplementation implements SubscribeRepository {
     @Override
     public List<Subscribe> getAllSubscriber() {
         String sql = "SELECT * FROM subscribed_user ";
-        try(Connection connection = DataBaseSourceClass.getDataSource().getConnection();
-        PreparedStatement stmt = connection.prepareStatement(sql)) {
+        try(Connection connection = DbConnection.getCon();
+            PreparedStatement stmt = connection.prepareStatement(sql)) {
 
             ResultSet rs  = stmt.executeQuery();
             List<Subscribe> subscriber = new ArrayList<>();
@@ -43,7 +42,7 @@ public class SubscribeRepositoryImplementation implements SubscribeRepository {
     public Subscribe save(SubscribeRequest request) {
 
         String sql = "INSERT INTO subscribed_user (email) values (?)";
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);) {
 
             stmt.setString(1, request.getEmail());

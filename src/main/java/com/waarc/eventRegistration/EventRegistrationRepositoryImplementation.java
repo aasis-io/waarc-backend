@@ -1,11 +1,9 @@
 package com.waarc.eventRegistration;
 
-import com.waarc.config.DataBaseSourceClass;
-import com.waarc.event.Event;
+import com.waarc.config.DbConnection;
 import com.waarc.eventRegistration.pojo.EventRegistrationRequest;
 import com.waarc.exception.OperationFailedException;
 import com.waarc.exception.ResourceNotFoundException;
-import com.waarc.service.Service;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
@@ -15,7 +13,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class EventRegistrationRepositoryImplementation implements EventRegistrationRepository {
     private static final Log log = LogFactory.getLog(EventRegistrationRepositoryImplementation.class);
@@ -155,7 +152,7 @@ public class EventRegistrationRepositoryImplementation implements EventRegistrat
         String sql = "SELECT ru.id AS id, ru.full_name AS fullName,ru.email AS email,ru.phone AS phone FROM registered_user ru";
 
         List<EventRegistration> eventRegistrations = new ArrayList<>();
-        try (Connection connection = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
 
             ResultSet rs = stmt.executeQuery();
@@ -180,7 +177,7 @@ public class EventRegistrationRepositoryImplementation implements EventRegistrat
 
         String sql = "INSERT INTO registered_user (full_name,email,phone) values (?,?,?)";
 
-        try (Connection conn = DataBaseSourceClass.getDataSource().getConnection();
+        try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);) {
 
             stmt.setString(1, request.getFullName());
