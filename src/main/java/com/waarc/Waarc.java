@@ -17,6 +17,7 @@ import com.waarc.service.ServiceController;
 
 import com.waarc.siteSetting.SiteSettingController;
 import com.waarc.subscriber.SubscribeController;
+import com.waarc.team.TeamController;
 import com.waarc.user.UserController;
 import com.waarc.work.WorkController;
 import io.javalin.Javalin;
@@ -66,6 +67,7 @@ public class Waarc {
 
         new AppConfig(app);
         new HomeController(app);
+        new TeamController(app);
         new UserController(app);
         new ServiceController(app);
         new SubscribeController(app);

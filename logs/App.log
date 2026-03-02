@@ -74,74 +74,74 @@ java.io.IOException: Cannot find etc/config.properties
 2026-03-01 11:49:24.037 NPT [JettyServerThreadPool-43] ERROR com.waarc.user.UserServiceImplementation login: line 98 - Invalid Email or Password
 2026-03-01 11:49:24.037 NPT [JettyServerThreadPool-43] ERROR com.waarc.user.UserServiceImplementation login: line 103 - Login Error : Invalid Email or Password !
 2026-03-01 11:49:36.519 NPT [JettyServerThreadPool-43] INFO  com.waarc.user.UserServiceImplementation login: line 94 - User Logged In
-2026-03-01 14:10:23.907 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeServiceImpl save: line 37 - Creating Home !
-2026-03-01 14:11:04.482 NPT [JettyServerThreadPool-44] INFO  com.waarc.home.HomeServiceImpl save: line 37 - Creating Home !
-2026-03-01 14:12:51.098 NPT [JettyServerThreadPool-38] INFO  com.waarc.home.HomeServiceImpl save: line 37 - Creating Home !
-2026-03-01 14:14:33.640 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeServiceImpl save: line 37 - Creating Home !
-2026-03-01 14:14:52.446 NPT [JettyServerThreadPool-48] INFO  com.waarc.home.HomeServiceImpl save: line 37 - Creating Home !
-2026-03-01 14:16:19.379 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeServiceImpl save: line 37 - Creating Home !
-2026-03-01 14:19:01.477 NPT [JettyServerThreadPool-50] INFO  com.waarc.home.HomeServiceImpl save: line 37 - Creating Home !
-2026-03-01 14:20:49.123 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeServiceImpl save: line 37 - Creating Home !
-2026-03-01 14:21:17.518 NPT [JettyServerThreadPool-48] INFO  com.waarc.home.HomeServiceImpl save: line 37 - Creating Home !
-2026-03-01 14:21:38.642 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeServiceImpl save: line 37 - Creating Home !
-2026-03-01 14:22:15.682 NPT [JettyServerThreadPool-42] INFO  com.waarc.home.HomeServiceImpl save: line 37 - Creating Home !
-2026-03-01 14:22:47.646 NPT [JettyServerThreadPool-50] INFO  com.waarc.home.HomeServiceImpl save: line 37 - Creating Home !
-2026-03-01 14:22:47.897 NPT [JettyServerThreadPool-50] ERROR com.waarc.home.HomeServiceImpl save: line 50 - Unrecognized field " bannerImage" (class com.waarc.home.pojo.HomeRequest), not marked as ignorable (6 known properties: "pageSubTitle", "pageTitle", "seoTitle", "bannerImage", "seoKeywords", "seoDescription"])
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 2, column: 22] (through reference chain: com.waarc.home.pojo.HomeRequest[" bannerImage"])
-2026-03-01 14:26:48.391 NPT [JettyServerThreadPool-44] INFO  com.waarc.home.HomeServiceImpl save: line 38 - Creating Home !
-2026-03-01 14:26:48.617 NPT [JettyServerThreadPool-44] ERROR com.waarc.home.HomeServiceImpl save: line 55 - Invalid request
-2026-03-01 14:27:35.157 NPT [JettyServerThreadPool-50] INFO  com.waarc.home.HomeServiceImpl save: line 38 - Creating Home !
-2026-03-01 14:27:35.497 NPT [JettyServerThreadPool-50] ERROR com.waarc.home.HomeRepositoryImpl save: line 67 - Home insertion Failed Parameter index out of range (2 > number of parameters, which is 1).
-2026-03-01 14:27:35.498 NPT [JettyServerThreadPool-50] ERROR com.waarc.home.HomeServiceImpl save: line 55 - com.waarc.exception.OperationFailedException: Failed to insert home
-2026-03-01 14:29:30.868 NPT [JettyServerThreadPool-44] INFO  com.waarc.home.HomeServiceImpl save: line 38 - Creating Home !
-2026-03-01 14:36:12.322 NPT [JettyServerThreadPool-50] INFO  com.waarc.home.HomeServiceImpl save: line 42 - Creating Home !
-2026-03-01 14:36:12.596 NPT [JettyServerThreadPool-50] ERROR com.waarc.home.HomeServiceImpl save: line 82 - com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+2026-03-01 14:10:23.907 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl save: line 37 - Creating Home !
+2026-03-01 14:11:04.482 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamServiceImpl save: line 37 - Creating Home !
+2026-03-01 14:12:51.098 NPT [JettyServerThreadPool-38] INFO  com.waarc.team.TeamServiceImpl save: line 37 - Creating Home !
+2026-03-01 14:14:33.640 NPT [JettyServerThreadPool-43] INFO  com.waarc.team.TeamServiceImpl save: line 37 - Creating Home !
+2026-03-01 14:14:52.446 NPT [JettyServerThreadPool-48] INFO  com.waarc.team.TeamServiceImpl save: line 37 - Creating Home !
+2026-03-01 14:16:19.379 NPT [JettyServerThreadPool-43] INFO  com.waarc.team.TeamServiceImpl save: line 37 - Creating Home !
+2026-03-01 14:19:01.477 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamServiceImpl save: line 37 - Creating Home !
+2026-03-01 14:20:49.123 NPT [JettyServerThreadPool-43] INFO  com.waarc.team.TeamServiceImpl save: line 37 - Creating Home !
+2026-03-01 14:21:17.518 NPT [JettyServerThreadPool-48] INFO  com.waarc.team.TeamServiceImpl save: line 37 - Creating Home !
+2026-03-01 14:21:38.642 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl save: line 37 - Creating Home !
+2026-03-01 14:22:15.682 NPT [JettyServerThreadPool-42] INFO  com.waarc.team.TeamServiceImpl save: line 37 - Creating Home !
+2026-03-01 14:22:47.646 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamServiceImpl save: line 37 - Creating Home !
+2026-03-01 14:22:47.897 NPT [JettyServerThreadPool-50] ERROR com.waarc.team.TeamServiceImpl save: line 50 - Unrecognized field " bannerImage" (class com.waarc.team.pojo.HomeRequest), not marked as ignorable (6 known properties: "pageSubTitle", "pageTitle", "seoTitle", "bannerImage", "seoKeywords", "seoDescription"])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 2, column: 22] (through reference chain: com.waarc.team.pojo.HomeRequest[" bannerImage"])
+2026-03-01 14:26:48.391 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamServiceImpl save: line 38 - Creating Home !
+2026-03-01 14:26:48.617 NPT [JettyServerThreadPool-44] ERROR com.waarc.team.TeamServiceImpl save: line 55 - Invalid request
+2026-03-01 14:27:35.157 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamServiceImpl save: line 38 - Creating Home !
+2026-03-01 14:27:35.497 NPT [JettyServerThreadPool-50] ERROR com.waarc.team.TeamRepositoryImpl save: line 67 - Home insertion Failed Parameter index out of range (2 > number of parameters, which is 1).
+2026-03-01 14:27:35.498 NPT [JettyServerThreadPool-50] ERROR com.waarc.team.TeamServiceImpl save: line 55 - com.waarc.exception.OperationFailedException: Failed to insert team
+2026-03-01 14:29:30.868 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamServiceImpl save: line 38 - Creating Home !
+2026-03-01 14:36:12.322 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamServiceImpl save: line 42 - Creating Home !
+2026-03-01 14:36:12.596 NPT [JettyServerThreadPool-50] ERROR com.waarc.team.TeamServiceImpl save: line 82 - com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
  at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
-2026-03-01 14:37:15.840 NPT [JettyServerThreadPool-50] INFO  com.waarc.home.HomeServiceImpl save: line 42 - Creating Home !
-2026-03-01 14:37:16.091 NPT [JettyServerThreadPool-50] ERROR com.waarc.home.HomeServiceImpl save: line 84 - com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+2026-03-01 14:37:15.840 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamServiceImpl save: line 42 - Creating Home !
+2026-03-01 14:37:16.091 NPT [JettyServerThreadPool-50] ERROR com.waarc.team.TeamServiceImpl save: line 84 - com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
  at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
-2026-03-01 14:37:35.657 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeServiceImpl save: line 42 - Creating Home !
-2026-03-01 14:37:35.917 NPT [JettyServerThreadPool-41] ERROR com.waarc.home.HomeServiceImpl save: line 84 - com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+2026-03-01 14:37:35.657 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl save: line 42 - Creating Home !
+2026-03-01 14:37:35.917 NPT [JettyServerThreadPool-41] ERROR com.waarc.team.TeamServiceImpl save: line 84 - com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
  at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
-2026-03-01 14:37:56.956 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeServiceImpl save: line 42 - Creating Home !
-2026-03-01 14:37:57.185 NPT [JettyServerThreadPool-41] ERROR com.waarc.home.HomeServiceImpl save: line 84 - com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+2026-03-01 14:37:56.956 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl save: line 42 - Creating Home !
+2026-03-01 14:37:57.185 NPT [JettyServerThreadPool-41] ERROR com.waarc.team.TeamServiceImpl save: line 84 - com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
  at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
-2026-03-01 14:38:45.707 NPT [JettyServerThreadPool-42] INFO  com.waarc.home.HomeServiceImpl save: line 42 - Creating Home !
-2026-03-01 14:38:45.957 NPT [JettyServerThreadPool-42] ERROR com.waarc.home.HomeServiceImpl save: line 84 - com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+2026-03-01 14:38:45.707 NPT [JettyServerThreadPool-42] INFO  com.waarc.team.TeamServiceImpl save: line 42 - Creating Home !
+2026-03-01 14:38:45.957 NPT [JettyServerThreadPool-42] ERROR com.waarc.team.TeamServiceImpl save: line 84 - com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
  at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
-2026-03-01 15:17:08.717 NPT [JettyServerThreadPool-50] INFO  com.waarc.home.HomeServiceImpl save: line 47 - Creating Home!
-2026-03-01 15:17:19.696 NPT [JettyServerThreadPool-40] INFO  com.waarc.home.HomeServiceImpl save: line 47 - Creating Home!
-2026-03-01 15:17:41.309 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeServiceImpl save: line 47 - Creating Home!
-2026-03-01 15:21:19.278 NPT [JettyServerThreadPool-45] INFO  com.waarc.home.HomeServiceImpl save: line 47 - Creating Home!
-2026-03-01 15:21:30.448 NPT [JettyServerThreadPool-40] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 25 - Getting Home !
-2026-03-01 15:21:30.463 NPT [JettyServerThreadPool-40] INFO  com.waarc.home.HomeServiceImpl updateHome: line 139 - Updating Home !
-2026-03-01 15:21:30.498 NPT [JettyServerThreadPool-40] ERROR com.waarc.home.HomeRepositoryImpl updateHome: line 92 - Failed to update HomeYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(banner_image,page_title,page_sub_title,seo_title,seo_keywords,seo_description)=' at line 1
-2026-03-01 15:23:11.349 NPT [JettyServerThreadPool-50] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 25 - Getting Home !
-2026-03-01 15:23:11.355 NPT [JettyServerThreadPool-50] INFO  com.waarc.home.HomeServiceImpl updateHome: line 137 - Updating Home !
-2026-03-01 15:23:11.411 NPT [JettyServerThreadPool-50] ERROR com.waarc.home.HomeRepositoryImpl updateHome: line 92 - Failed to update HomeNo value specified for parameter 7
-2026-03-01 15:25:20.326 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 25 - Getting Home !
-2026-03-01 15:25:20.334 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeServiceImpl updateHome: line 139 - Updating Home !
-2026-03-01 15:25:20.388 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 89 - Home updated SuccessFul !
-2026-03-01 15:25:55.133 NPT [JettyServerThreadPool-38] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 25 - Getting Home !
-2026-03-01 15:25:55.134 NPT [JettyServerThreadPool-38] INFO  com.waarc.home.HomeServiceImpl updateHome: line 139 - Updating Home !
-2026-03-01 15:25:55.172 NPT [JettyServerThreadPool-38] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 89 - Home updated SuccessFul !
-2026-03-01 15:26:09.616 NPT [JettyServerThreadPool-40] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 25 - Getting Home !
-2026-03-01 15:26:09.618 NPT [JettyServerThreadPool-40] INFO  com.waarc.home.HomeServiceImpl updateHome: line 139 - Updating Home !
-2026-03-01 15:26:09.650 NPT [JettyServerThreadPool-40] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 89 - Home updated SuccessFul !
-2026-03-01 15:29:02.546 NPT [JettyServerThreadPool-39] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 25 - Getting Home !
-2026-03-01 15:29:02.556 NPT [JettyServerThreadPool-39] INFO  com.waarc.home.HomeServiceImpl updateHome: line 144 - Updating Home!
-2026-03-01 15:29:02.580 NPT [JettyServerThreadPool-39] INFO  com.waarc.home.HomeServiceImpl updateHome: line 213 - Deleted old image: uploads\fb007392-1c0a-4951-86b0-0622b524e406.png
-2026-03-01 15:29:02.596 NPT [JettyServerThreadPool-39] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 89 - Home updated SuccessFul !
-2026-03-01 15:36:38.180 NPT [JettyServerThreadPool-42] INFO  com.waarc.home.HomeServiceImpl save: line 46 - Creating Home!
-2026-03-01 15:36:46.300 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 25 - Getting Home !
-2026-03-01 15:36:46.303 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeServiceImpl updateHome: line 144 - Updating Home!
-2026-03-01 15:36:46.320 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeServiceImpl updateHome: line 213 - Deleted old image: uploads\d6ed997e-55c0-400f-ae1a-bc695f664127.png
-2026-03-01 15:36:46.339 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 89 - Home updated SuccessFul !
-2026-03-01 15:37:31.098 NPT [JettyServerThreadPool-44] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 25 - Getting Home !
-2026-03-01 15:37:31.101 NPT [JettyServerThreadPool-44] INFO  com.waarc.home.HomeServiceImpl updateHome: line 144 - Updating Home!
-2026-03-01 15:37:31.114 NPT [JettyServerThreadPool-44] INFO  com.waarc.home.HomeServiceImpl updateHome: line 213 - Deleted old image: uploads\103897aa-a971-4862-9bbc-c725efe9c6d3.png
-2026-03-01 15:37:31.133 NPT [JettyServerThreadPool-44] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 89 - Home updated SuccessFul !
-2026-03-01 15:42:03.181 NPT [JettyServerThreadPool-50] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 25 - Getting Home !
+2026-03-01 15:17:08.717 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamServiceImpl save: line 47 - Creating Home!
+2026-03-01 15:17:19.696 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamServiceImpl save: line 47 - Creating Home!
+2026-03-01 15:17:41.309 NPT [JettyServerThreadPool-43] INFO  com.waarc.team.TeamServiceImpl save: line 47 - Creating Home!
+2026-03-01 15:21:19.278 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamServiceImpl save: line 47 - Creating Home!
+2026-03-01 15:21:30.448 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 25 - Getting Home !
+2026-03-01 15:21:30.463 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamServiceImpl updateHome: line 139 - Updating Home !
+2026-03-01 15:21:30.498 NPT [JettyServerThreadPool-40] ERROR com.waarc.team.TeamRepositoryImpl updateHome: line 92 - Failed to update HomeYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(banner_image,page_title,page_sub_title,seo_title,seo_keywords,seo_description)=' at line 1
+2026-03-01 15:23:11.349 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 25 - Getting Home !
+2026-03-01 15:23:11.355 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamServiceImpl updateHome: line 137 - Updating Home !
+2026-03-01 15:23:11.411 NPT [JettyServerThreadPool-50] ERROR com.waarc.team.TeamRepositoryImpl updateHome: line 92 - Failed to update HomeNo value specified for parameter 7
+2026-03-01 15:25:20.326 NPT [JettyServerThreadPool-43] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 25 - Getting Home !
+2026-03-01 15:25:20.334 NPT [JettyServerThreadPool-43] INFO  com.waarc.team.TeamServiceImpl updateHome: line 139 - Updating Home !
+2026-03-01 15:25:20.388 NPT [JettyServerThreadPool-43] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 89 - Home updated SuccessFul !
+2026-03-01 15:25:55.133 NPT [JettyServerThreadPool-38] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 25 - Getting Home !
+2026-03-01 15:25:55.134 NPT [JettyServerThreadPool-38] INFO  com.waarc.team.TeamServiceImpl updateHome: line 139 - Updating Home !
+2026-03-01 15:25:55.172 NPT [JettyServerThreadPool-38] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 89 - Home updated SuccessFul !
+2026-03-01 15:26:09.616 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 25 - Getting Home !
+2026-03-01 15:26:09.618 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamServiceImpl updateHome: line 139 - Updating Home !
+2026-03-01 15:26:09.650 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 89 - Home updated SuccessFul !
+2026-03-01 15:29:02.546 NPT [JettyServerThreadPool-39] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 25 - Getting Home !
+2026-03-01 15:29:02.556 NPT [JettyServerThreadPool-39] INFO  com.waarc.team.TeamServiceImpl updateHome: line 144 - Updating Home!
+2026-03-01 15:29:02.580 NPT [JettyServerThreadPool-39] INFO  com.waarc.team.TeamServiceImpl updateHome: line 213 - Deleted old image: uploads\fb007392-1c0a-4951-86b0-0622b524e406.png
+2026-03-01 15:29:02.596 NPT [JettyServerThreadPool-39] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 89 - Home updated SuccessFul !
+2026-03-01 15:36:38.180 NPT [JettyServerThreadPool-42] INFO  com.waarc.team.TeamServiceImpl save: line 46 - Creating Home!
+2026-03-01 15:36:46.300 NPT [JettyServerThreadPool-43] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 25 - Getting Home !
+2026-03-01 15:36:46.303 NPT [JettyServerThreadPool-43] INFO  com.waarc.team.TeamServiceImpl updateHome: line 144 - Updating Home!
+2026-03-01 15:36:46.320 NPT [JettyServerThreadPool-43] INFO  com.waarc.team.TeamServiceImpl updateHome: line 213 - Deleted old image: uploads\d6ed997e-55c0-400f-ae1a-bc695f664127.png
+2026-03-01 15:36:46.339 NPT [JettyServerThreadPool-43] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 89 - Home updated SuccessFul !
+2026-03-01 15:37:31.098 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 25 - Getting Home !
+2026-03-01 15:37:31.101 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamServiceImpl updateHome: line 144 - Updating Home!
+2026-03-01 15:37:31.114 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamServiceImpl updateHome: line 213 - Deleted old image: uploads\103897aa-a971-4862-9bbc-c725efe9c6d3.png
+2026-03-01 15:37:31.133 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 89 - Home updated SuccessFul !
+2026-03-01 15:42:03.181 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 25 - Getting Home !
 2026-03-01 16:01:51.255 NPT [JettyServerThreadPool-40] ERROR com.waarc.user.UserServiceImplementation login: line 98 - Invalid Email or Password
 2026-03-01 16:01:51.270 NPT [JettyServerThreadPool-40] ERROR com.waarc.user.UserServiceImplementation login: line 103 - Login Error : Invalid Email or Password !
 2026-03-01 16:01:52.407 NPT [JettyServerThreadPool-42] ERROR com.waarc.user.UserServiceImplementation login: line 98 - Invalid Email or Password
@@ -152,12 +152,12 @@ java.io.IOException: Cannot find etc/config.properties
 2026-03-01 16:04:39.495 NPT [JettyServerThreadPool-43] INFO  com.waarc.user.UserServiceImplementation login: line 94 - User Logged In
 2026-03-01 16:25:20.708 NPT [JettyServerThreadPool-45] INFO  com.waarc.user.UserServiceImplementation login: line 94 - User Logged In
 2026-03-01 16:27:07.399 NPT [JettyServerThreadPool-39] INFO  com.waarc.user.UserServiceImplementation login: line 94 - User Logged In
-2026-03-01 17:08:13.891 NPT [JettyServerThreadPool-44] INFO  com.waarc.home.HomeServiceImpl updateHome: line 152 - Upserting Home!
-2026-03-01 17:08:13.919 NPT [JettyServerThreadPool-44] ERROR com.waarc.home.HomeServiceImpl updateHome: line 242 - Error upserting home: Home not found
+2026-03-01 17:08:13.891 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamServiceImpl updateHome: line 152 - Upserting Home!
+2026-03-01 17:08:13.919 NPT [JettyServerThreadPool-44] ERROR com.waarc.team.TeamServiceImpl updateHome: line 242 - Error upserting team: Home not found
 com.waarc.exception.ResourceNotFoundException: Home not found
-	at com.waarc.home.HomeRepositoryImpl.getHome(HomeRepositoryImpl.java:34)
-	at com.waarc.home.HomeServiceImpl.updateHome(HomeServiceImpl.java:156)
-	at com.waarc.home.HomeController.lambda$new$1(HomeController.java:18)
+	at com.waarc.team.TeamRepositoryImpl.getHome(HomeRepositoryImpl.java:34)
+	at com.waarc.team.TeamServiceImpl.updateHome(HomeServiceImpl.java:156)
+	at com.waarc.team.TeamController.lambda$new$1(HomeController.java:18)
 	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
 	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
 	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
@@ -194,78 +194,78 @@ com.waarc.exception.ResourceNotFoundException: Home not found
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2026-03-01 17:13:34.754 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 17:13:34.861 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeServiceImpl updateHome: line 234 - Home not found, creating new home...
-2026-03-01 17:13:46.734 NPT [JettyServerThreadPool-42] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:14:12.167 NPT [JettyServerThreadPool-45] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:18:00.348 NPT [JettyServerThreadPool-42] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 17:18:00.367 NPT [JettyServerThreadPool-42] INFO  com.waarc.home.HomeServiceImpl updateHome: line 215 - Deleted old image: uploads\4c6a8b4d-f08d-4443-b49a-9c80ebca15b5.png
-2026-03-01 17:18:00.378 NPT [JettyServerThreadPool-42] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 17:18:00.383 NPT [JettyServerThreadPool-42] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 90 - Home updated SuccessFul !
-2026-03-01 17:19:35.420 NPT [JettyServerThreadPool-45] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:19:36.659 NPT [JettyServerThreadPool-42] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:19:38.619 NPT [JettyServerThreadPool-45] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:20:39.964 NPT [JettyServerThreadPool-50] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:20:41.595 NPT [JettyServerThreadPool-43] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:20:46.915 NPT [JettyServerThreadPool-40] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:23:12.261 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 17:23:12.286 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeServiceImpl updateHome: line 234 - Home not found, creating new home...
-2026-03-01 17:23:22.025 NPT [JettyServerThreadPool-40] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:24:24.336 NPT [JettyServerThreadPool-37] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:24:27.339 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:25:17.782 NPT [JettyServerThreadPool-38] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:25:17.782 NPT [JettyServerThreadPool-34] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:25:37.059 NPT [JettyServerThreadPool-36] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:25:37.060 NPT [JettyServerThreadPool-46] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:29:49.658 NPT [JettyServerThreadPool-49] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:29:50.392 NPT [JettyServerThreadPool-40] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:29:59.967 NPT [JettyServerThreadPool-34] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:29:59.968 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:30:08.378 NPT [JettyServerThreadPool-40] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:32:53.995 NPT [JettyServerThreadPool-52] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:32:53.995 NPT [JettyServerThreadPool-50] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:41:39.850 NPT [JettyServerThreadPool-47] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:43:56.289 NPT [JettyServerThreadPool-38] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:43:56.289 NPT [JettyServerThreadPool-46] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:44:01.629 NPT [JettyServerThreadPool-36] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:44:01.629 NPT [JettyServerThreadPool-37] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:44:21.219 NPT [JettyServerThreadPool-47] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:44:21.219 NPT [JettyServerThreadPool-46] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:44:24.338 NPT [JettyServerThreadPool-36] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:44:24.338 NPT [JettyServerThreadPool-35] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:45:28.403 NPT [JettyServerThreadPool-37] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:45:28.404 NPT [JettyServerThreadPool-38] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:49:23.833 NPT [JettyServerThreadPool-47] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:49:23.833 NPT [JettyServerThreadPool-46] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:50:30.629 NPT [JettyServerThreadPool-37] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 17:50:30.666 NPT [JettyServerThreadPool-37] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 17:50:30.684 NPT [JettyServerThreadPool-37] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
-2026-03-01 17:50:37.676 NPT [JettyServerThreadPool-35] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:50:37.677 NPT [JettyServerThreadPool-34] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:51:33.213 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 17:51:33.232 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 17:51:33.234 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
-2026-03-01 17:51:36.647 NPT [JettyServerThreadPool-40] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:51:36.647 NPT [JettyServerThreadPool-38] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:52:37.103 NPT [JettyServerThreadPool-38] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:53:42.469 NPT [JettyServerThreadPool-40] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:53:42.469 NPT [JettyServerThreadPool-38] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:55:55.168 NPT [JettyServerThreadPool-50] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:55:55.168 NPT [JettyServerThreadPool-40] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:56:01.863 NPT [JettyServerThreadPool-48] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 17:56:01.892 NPT [JettyServerThreadPool-48] INFO  com.waarc.home.HomeServiceImpl updateHome: line 215 - Deleted old image: uploads/e102c2fd-577c-42ed-8f2c-169a102b65c7.png
-2026-03-01 17:56:01.894 NPT [JettyServerThreadPool-48] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 17:56:01.898 NPT [JettyServerThreadPool-48] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
-2026-03-01 17:56:04.826 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:56:04.826 NPT [JettyServerThreadPool-35] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 17:59:14.674 NPT [JettyServerThreadPool-46] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 17:59:14.694 NPT [JettyServerThreadPool-46] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 17:59:14.733 NPT [JettyServerThreadPool-46] ERROR com.waarc.home.HomeRepositoryImpl updateHome: line 95 - Failed to update HomeData truncation: Data too long for column 'seo_title' at row 1
-2026-03-01 17:59:14.733 NPT [JettyServerThreadPool-46] ERROR com.waarc.home.HomeServiceImpl updateHome: line 243 - Error upserting home: Data truncation: Data too long for column 'seo_title' at row 1
+2026-03-01 17:13:34.754 NPT [JettyServerThreadPool-43] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 17:13:34.861 NPT [JettyServerThreadPool-43] INFO  com.waarc.team.TeamServiceImpl updateHome: line 234 - Home not found, creating new team...
+2026-03-01 17:13:46.734 NPT [JettyServerThreadPool-42] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:14:12.167 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:18:00.348 NPT [JettyServerThreadPool-42] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 17:18:00.367 NPT [JettyServerThreadPool-42] INFO  com.waarc.team.TeamServiceImpl updateHome: line 215 - Deleted old image: uploads\4c6a8b4d-f08d-4443-b49a-9c80ebca15b5.png
+2026-03-01 17:18:00.378 NPT [JettyServerThreadPool-42] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 17:18:00.383 NPT [JettyServerThreadPool-42] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 90 - Home updated SuccessFul !
+2026-03-01 17:19:35.420 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:19:36.659 NPT [JettyServerThreadPool-42] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:19:38.619 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:20:39.964 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:20:41.595 NPT [JettyServerThreadPool-43] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:20:46.915 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:23:12.261 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 17:23:12.286 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl updateHome: line 234 - Home not found, creating new team...
+2026-03-01 17:23:22.025 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:24:24.336 NPT [JettyServerThreadPool-37] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:24:27.339 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:25:17.782 NPT [JettyServerThreadPool-38] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:25:17.782 NPT [JettyServerThreadPool-34] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:25:37.059 NPT [JettyServerThreadPool-36] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:25:37.060 NPT [JettyServerThreadPool-46] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:29:49.658 NPT [JettyServerThreadPool-49] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:29:50.392 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:29:59.967 NPT [JettyServerThreadPool-34] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:29:59.968 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:30:08.378 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:32:53.995 NPT [JettyServerThreadPool-52] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:32:53.995 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:41:39.850 NPT [JettyServerThreadPool-47] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:43:56.289 NPT [JettyServerThreadPool-38] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:43:56.289 NPT [JettyServerThreadPool-46] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:44:01.629 NPT [JettyServerThreadPool-36] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:44:01.629 NPT [JettyServerThreadPool-37] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:44:21.219 NPT [JettyServerThreadPool-47] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:44:21.219 NPT [JettyServerThreadPool-46] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:44:24.338 NPT [JettyServerThreadPool-36] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:44:24.338 NPT [JettyServerThreadPool-35] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:45:28.403 NPT [JettyServerThreadPool-37] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:45:28.404 NPT [JettyServerThreadPool-38] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:49:23.833 NPT [JettyServerThreadPool-47] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:49:23.833 NPT [JettyServerThreadPool-46] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:50:30.629 NPT [JettyServerThreadPool-37] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 17:50:30.666 NPT [JettyServerThreadPool-37] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 17:50:30.684 NPT [JettyServerThreadPool-37] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-01 17:50:37.676 NPT [JettyServerThreadPool-35] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:50:37.677 NPT [JettyServerThreadPool-34] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:51:33.213 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 17:51:33.232 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 17:51:33.234 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-01 17:51:36.647 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:51:36.647 NPT [JettyServerThreadPool-38] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:52:37.103 NPT [JettyServerThreadPool-38] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:53:42.469 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:53:42.469 NPT [JettyServerThreadPool-38] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:55:55.168 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:55:55.168 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:56:01.863 NPT [JettyServerThreadPool-48] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 17:56:01.892 NPT [JettyServerThreadPool-48] INFO  com.waarc.team.TeamServiceImpl updateHome: line 215 - Deleted old image: uploads/e102c2fd-577c-42ed-8f2c-169a102b65c7.png
+2026-03-01 17:56:01.894 NPT [JettyServerThreadPool-48] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 17:56:01.898 NPT [JettyServerThreadPool-48] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-01 17:56:04.826 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:56:04.826 NPT [JettyServerThreadPool-35] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 17:59:14.674 NPT [JettyServerThreadPool-46] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 17:59:14.694 NPT [JettyServerThreadPool-46] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 17:59:14.733 NPT [JettyServerThreadPool-46] ERROR com.waarc.team.TeamRepositoryImpl updateHome: line 95 - Failed to update HomeData truncation: Data too long for column 'seo_title' at row 1
+2026-03-01 17:59:14.733 NPT [JettyServerThreadPool-46] ERROR com.waarc.team.TeamServiceImpl updateHome: line 243 - Error upserting team: Data truncation: Data too long for column 'seo_title' at row 1
 com.waarc.exception.OperationFailedException: Data truncation: Data too long for column 'seo_title' at row 1
-	at com.waarc.home.HomeRepositoryImpl.updateHome(HomeRepositoryImpl.java:96)
-	at com.waarc.home.HomeServiceImpl.updateHome(HomeServiceImpl.java:238)
-	at com.waarc.home.HomeController.lambda$new$1(HomeController.java:18)
+	at com.waarc.team.TeamRepositoryImpl.updateHome(HomeRepositoryImpl.java:96)
+	at com.waarc.team.TeamServiceImpl.updateHome(HomeServiceImpl.java:238)
+	at com.waarc.team.TeamController.lambda$new$1(HomeController.java:18)
 	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
 	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
 	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
@@ -307,14 +307,14 @@ com.waarc.exception.OperationFailedException: Data truncation: Data too long for
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2026-03-01 18:01:33.535 NPT [JettyServerThreadPool-49] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:01:33.553 NPT [JettyServerThreadPool-49] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 18:01:33.556 NPT [JettyServerThreadPool-49] ERROR com.waarc.home.HomeRepositoryImpl updateHome: line 95 - Failed to update HomeData truncation: Data too long for column 'seo_title' at row 1
-2026-03-01 18:01:33.557 NPT [JettyServerThreadPool-49] ERROR com.waarc.home.HomeServiceImpl updateHome: line 243 - Error upserting home: Data truncation: Data too long for column 'seo_title' at row 1
+2026-03-01 18:01:33.535 NPT [JettyServerThreadPool-49] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:01:33.553 NPT [JettyServerThreadPool-49] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 18:01:33.556 NPT [JettyServerThreadPool-49] ERROR com.waarc.team.TeamRepositoryImpl updateHome: line 95 - Failed to update HomeData truncation: Data too long for column 'seo_title' at row 1
+2026-03-01 18:01:33.557 NPT [JettyServerThreadPool-49] ERROR com.waarc.team.TeamServiceImpl updateHome: line 243 - Error upserting team: Data truncation: Data too long for column 'seo_title' at row 1
 com.waarc.exception.OperationFailedException: Data truncation: Data too long for column 'seo_title' at row 1
-	at com.waarc.home.HomeRepositoryImpl.updateHome(HomeRepositoryImpl.java:96)
-	at com.waarc.home.HomeServiceImpl.updateHome(HomeServiceImpl.java:238)
-	at com.waarc.home.HomeController.lambda$new$1(HomeController.java:18)
+	at com.waarc.team.TeamRepositoryImpl.updateHome(HomeRepositoryImpl.java:96)
+	at com.waarc.team.TeamServiceImpl.updateHome(HomeServiceImpl.java:238)
+	at com.waarc.team.TeamController.lambda$new$1(HomeController.java:18)
 	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
 	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
 	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
@@ -356,14 +356,14 @@ com.waarc.exception.OperationFailedException: Data truncation: Data too long for
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2026-03-01 18:04:15.180 NPT [JettyServerThreadPool-37] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:04:15.200 NPT [JettyServerThreadPool-37] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 18:04:15.203 NPT [JettyServerThreadPool-37] ERROR com.waarc.home.HomeRepositoryImpl updateHome: line 95 - Failed to update HomeData truncation: Data too long for column 'seo_title' at row 1
-2026-03-01 18:04:15.204 NPT [JettyServerThreadPool-37] ERROR com.waarc.home.HomeServiceImpl updateHome: line 243 - Error upserting home: Data truncation: Data too long for column 'seo_title' at row 1
+2026-03-01 18:04:15.180 NPT [JettyServerThreadPool-37] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:04:15.200 NPT [JettyServerThreadPool-37] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 18:04:15.203 NPT [JettyServerThreadPool-37] ERROR com.waarc.team.TeamRepositoryImpl updateHome: line 95 - Failed to update HomeData truncation: Data too long for column 'seo_title' at row 1
+2026-03-01 18:04:15.204 NPT [JettyServerThreadPool-37] ERROR com.waarc.team.TeamServiceImpl updateHome: line 243 - Error upserting team: Data truncation: Data too long for column 'seo_title' at row 1
 com.waarc.exception.OperationFailedException: Data truncation: Data too long for column 'seo_title' at row 1
-	at com.waarc.home.HomeRepositoryImpl.updateHome(HomeRepositoryImpl.java:96)
-	at com.waarc.home.HomeServiceImpl.updateHome(HomeServiceImpl.java:238)
-	at com.waarc.home.HomeController.lambda$new$1(HomeController.java:18)
+	at com.waarc.team.TeamRepositoryImpl.updateHome(HomeRepositoryImpl.java:96)
+	at com.waarc.team.TeamServiceImpl.updateHome(HomeServiceImpl.java:238)
+	at com.waarc.team.TeamController.lambda$new$1(HomeController.java:18)
 	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
 	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
 	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
@@ -405,14 +405,14 @@ com.waarc.exception.OperationFailedException: Data truncation: Data too long for
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2026-03-01 18:04:25.370 NPT [JettyServerThreadPool-52] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:04:25.382 NPT [JettyServerThreadPool-52] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 18:04:25.386 NPT [JettyServerThreadPool-52] ERROR com.waarc.home.HomeRepositoryImpl updateHome: line 95 - Failed to update HomeData truncation: Data too long for column 'seo_title' at row 1
-2026-03-01 18:04:25.386 NPT [JettyServerThreadPool-52] ERROR com.waarc.home.HomeServiceImpl updateHome: line 243 - Error upserting home: Data truncation: Data too long for column 'seo_title' at row 1
+2026-03-01 18:04:25.370 NPT [JettyServerThreadPool-52] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:04:25.382 NPT [JettyServerThreadPool-52] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 18:04:25.386 NPT [JettyServerThreadPool-52] ERROR com.waarc.team.TeamRepositoryImpl updateHome: line 95 - Failed to update HomeData truncation: Data too long for column 'seo_title' at row 1
+2026-03-01 18:04:25.386 NPT [JettyServerThreadPool-52] ERROR com.waarc.team.TeamServiceImpl updateHome: line 243 - Error upserting team: Data truncation: Data too long for column 'seo_title' at row 1
 com.waarc.exception.OperationFailedException: Data truncation: Data too long for column 'seo_title' at row 1
-	at com.waarc.home.HomeRepositoryImpl.updateHome(HomeRepositoryImpl.java:96)
-	at com.waarc.home.HomeServiceImpl.updateHome(HomeServiceImpl.java:238)
-	at com.waarc.home.HomeController.lambda$new$1(HomeController.java:18)
+	at com.waarc.team.TeamRepositoryImpl.updateHome(HomeRepositoryImpl.java:96)
+	at com.waarc.team.TeamServiceImpl.updateHome(HomeServiceImpl.java:238)
+	at com.waarc.team.TeamController.lambda$new$1(HomeController.java:18)
 	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
 	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
 	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
@@ -454,14 +454,14 @@ com.waarc.exception.OperationFailedException: Data truncation: Data too long for
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2026-03-01 18:04:44.197 NPT [JettyServerThreadPool-36] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:04:44.211 NPT [JettyServerThreadPool-36] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 18:04:44.214 NPT [JettyServerThreadPool-36] ERROR com.waarc.home.HomeRepositoryImpl updateHome: line 95 - Failed to update HomeData truncation: Data too long for column 'seo_title' at row 1
-2026-03-01 18:04:44.215 NPT [JettyServerThreadPool-36] ERROR com.waarc.home.HomeServiceImpl updateHome: line 243 - Error upserting home: Data truncation: Data too long for column 'seo_title' at row 1
+2026-03-01 18:04:44.197 NPT [JettyServerThreadPool-36] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:04:44.211 NPT [JettyServerThreadPool-36] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 18:04:44.214 NPT [JettyServerThreadPool-36] ERROR com.waarc.team.TeamRepositoryImpl updateHome: line 95 - Failed to update HomeData truncation: Data too long for column 'seo_title' at row 1
+2026-03-01 18:04:44.215 NPT [JettyServerThreadPool-36] ERROR com.waarc.team.TeamServiceImpl updateHome: line 243 - Error upserting team: Data truncation: Data too long for column 'seo_title' at row 1
 com.waarc.exception.OperationFailedException: Data truncation: Data too long for column 'seo_title' at row 1
-	at com.waarc.home.HomeRepositoryImpl.updateHome(HomeRepositoryImpl.java:96)
-	at com.waarc.home.HomeServiceImpl.updateHome(HomeServiceImpl.java:238)
-	at com.waarc.home.HomeController.lambda$new$1(HomeController.java:18)
+	at com.waarc.team.TeamRepositoryImpl.updateHome(HomeRepositoryImpl.java:96)
+	at com.waarc.team.TeamServiceImpl.updateHome(HomeServiceImpl.java:238)
+	at com.waarc.team.TeamController.lambda$new$1(HomeController.java:18)
 	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
 	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
 	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
@@ -503,14 +503,14 @@ com.waarc.exception.OperationFailedException: Data truncation: Data too long for
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2026-03-01 18:05:12.720 NPT [JettyServerThreadPool-37] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:05:12.737 NPT [JettyServerThreadPool-37] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 18:05:12.739 NPT [JettyServerThreadPool-37] ERROR com.waarc.home.HomeRepositoryImpl updateHome: line 95 - Failed to update HomeData truncation: Data too long for column 'seo_title' at row 1
-2026-03-01 18:05:12.739 NPT [JettyServerThreadPool-37] ERROR com.waarc.home.HomeServiceImpl updateHome: line 243 - Error upserting home: Data truncation: Data too long for column 'seo_title' at row 1
+2026-03-01 18:05:12.720 NPT [JettyServerThreadPool-37] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:05:12.737 NPT [JettyServerThreadPool-37] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 18:05:12.739 NPT [JettyServerThreadPool-37] ERROR com.waarc.team.TeamRepositoryImpl updateHome: line 95 - Failed to update HomeData truncation: Data too long for column 'seo_title' at row 1
+2026-03-01 18:05:12.739 NPT [JettyServerThreadPool-37] ERROR com.waarc.team.TeamServiceImpl updateHome: line 243 - Error upserting team: Data truncation: Data too long for column 'seo_title' at row 1
 com.waarc.exception.OperationFailedException: Data truncation: Data too long for column 'seo_title' at row 1
-	at com.waarc.home.HomeRepositoryImpl.updateHome(HomeRepositoryImpl.java:96)
-	at com.waarc.home.HomeServiceImpl.updateHome(HomeServiceImpl.java:238)
-	at com.waarc.home.HomeController.lambda$new$1(HomeController.java:18)
+	at com.waarc.team.TeamRepositoryImpl.updateHome(HomeRepositoryImpl.java:96)
+	at com.waarc.team.TeamServiceImpl.updateHome(HomeServiceImpl.java:238)
+	at com.waarc.team.TeamController.lambda$new$1(HomeController.java:18)
 	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
 	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
 	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
@@ -552,60 +552,60 @@ com.waarc.exception.OperationFailedException: Data truncation: Data too long for
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2026-03-01 18:07:04.301 NPT [JettyServerThreadPool-46] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:07:04.314 NPT [JettyServerThreadPool-46] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 18:07:04.317 NPT [JettyServerThreadPool-46] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
-2026-03-01 18:07:12.992 NPT [JettyServerThreadPool-53] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:07:13.005 NPT [JettyServerThreadPool-53] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 18:07:13.008 NPT [JettyServerThreadPool-53] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
-2026-03-01 18:07:16.764 NPT [JettyServerThreadPool-48] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:07:16.766 NPT [JettyServerThreadPool-49] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:07:25.170 NPT [JettyServerThreadPool-48] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:07:25.170 NPT [JettyServerThreadPool-52] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:07:29.608 NPT [JettyServerThreadPool-49] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:07:29.618 NPT [JettyServerThreadPool-49] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 18:07:29.622 NPT [JettyServerThreadPool-49] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
-2026-03-01 18:07:31.902 NPT [JettyServerThreadPool-48] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:07:31.902 NPT [JettyServerThreadPool-46] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:07:54.826 NPT [JettyServerThreadPool-49] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:07:54.834 NPT [JettyServerThreadPool-49] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 18:07:54.836 NPT [JettyServerThreadPool-49] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
-2026-03-01 18:07:58.783 NPT [JettyServerThreadPool-52] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:07:58.783 NPT [JettyServerThreadPool-53] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:10:21.012 NPT [JettyServerThreadPool-36] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:10:21.027 NPT [JettyServerThreadPool-36] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 18:10:21.030 NPT [JettyServerThreadPool-36] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
-2026-03-01 18:10:23.042 NPT [JettyServerThreadPool-53] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:10:23.042 NPT [JettyServerThreadPool-54] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:10:36.017 NPT [JettyServerThreadPool-36] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:10:36.017 NPT [JettyServerThreadPool-52] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:10:38.835 NPT [JettyServerThreadPool-49] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:10:38.835 NPT [JettyServerThreadPool-48] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:12:16.997 NPT [JettyServerThreadPool-58] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:12:46.287 NPT [JettyServerThreadPool-52] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:12:52.206 NPT [JettyServerThreadPool-49] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:12:52.214 NPT [JettyServerThreadPool-49] INFO  com.waarc.home.HomeServiceImpl updateHome: line 215 - Deleted old image: uploads/c41ed640-6a79-452d-9eb1-6ed97ee052a7.png
-2026-03-01 18:12:52.214 NPT [JettyServerThreadPool-49] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 18:12:52.218 NPT [JettyServerThreadPool-49] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
-2026-03-01 18:12:57.922 NPT [JettyServerThreadPool-54] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:12:57.923 NPT [JettyServerThreadPool-46] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:13:02.669 NPT [JettyServerThreadPool-54] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:13:02.687 NPT [JettyServerThreadPool-54] INFO  com.waarc.home.HomeServiceImpl updateHome: line 215 - Deleted old image: uploads/accbefd4-2215-417e-8096-b90d36b16dce.png
-2026-03-01 18:13:02.690 NPT [JettyServerThreadPool-54] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 18:13:02.693 NPT [JettyServerThreadPool-54] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
-2026-03-01 18:13:10.304 NPT [JettyServerThreadPool-52] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:13:14.267 NPT [JettyServerThreadPool-54] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:13:14.275 NPT [JettyServerThreadPool-54] INFO  com.waarc.home.HomeServiceImpl updateHome: line 215 - Deleted old image: uploads/a72b526f-cfda-4c69-9c3b-e34896f2fa3e.png
-2026-03-01 18:13:14.276 NPT [JettyServerThreadPool-54] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 18:13:14.278 NPT [JettyServerThreadPool-54] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
-2026-03-01 18:13:24.011 NPT [JettyServerThreadPool-52] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:13:24.018 NPT [JettyServerThreadPool-52] ERROR com.waarc.home.HomeServiceImpl updateHome: line 243 - Error upserting home: null
+2026-03-01 18:07:04.301 NPT [JettyServerThreadPool-46] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:07:04.314 NPT [JettyServerThreadPool-46] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 18:07:04.317 NPT [JettyServerThreadPool-46] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-01 18:07:12.992 NPT [JettyServerThreadPool-53] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:07:13.005 NPT [JettyServerThreadPool-53] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 18:07:13.008 NPT [JettyServerThreadPool-53] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-01 18:07:16.764 NPT [JettyServerThreadPool-48] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:07:16.766 NPT [JettyServerThreadPool-49] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:07:25.170 NPT [JettyServerThreadPool-48] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:07:25.170 NPT [JettyServerThreadPool-52] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:07:29.608 NPT [JettyServerThreadPool-49] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:07:29.618 NPT [JettyServerThreadPool-49] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 18:07:29.622 NPT [JettyServerThreadPool-49] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-01 18:07:31.902 NPT [JettyServerThreadPool-48] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:07:31.902 NPT [JettyServerThreadPool-46] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:07:54.826 NPT [JettyServerThreadPool-49] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:07:54.834 NPT [JettyServerThreadPool-49] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 18:07:54.836 NPT [JettyServerThreadPool-49] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-01 18:07:58.783 NPT [JettyServerThreadPool-52] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:07:58.783 NPT [JettyServerThreadPool-53] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:10:21.012 NPT [JettyServerThreadPool-36] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:10:21.027 NPT [JettyServerThreadPool-36] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 18:10:21.030 NPT [JettyServerThreadPool-36] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-01 18:10:23.042 NPT [JettyServerThreadPool-53] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:10:23.042 NPT [JettyServerThreadPool-54] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:10:36.017 NPT [JettyServerThreadPool-36] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:10:36.017 NPT [JettyServerThreadPool-52] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:10:38.835 NPT [JettyServerThreadPool-49] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:10:38.835 NPT [JettyServerThreadPool-48] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:12:16.997 NPT [JettyServerThreadPool-58] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:12:46.287 NPT [JettyServerThreadPool-52] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:12:52.206 NPT [JettyServerThreadPool-49] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:12:52.214 NPT [JettyServerThreadPool-49] INFO  com.waarc.team.TeamServiceImpl updateHome: line 215 - Deleted old image: uploads/c41ed640-6a79-452d-9eb1-6ed97ee052a7.png
+2026-03-01 18:12:52.214 NPT [JettyServerThreadPool-49] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 18:12:52.218 NPT [JettyServerThreadPool-49] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-01 18:12:57.922 NPT [JettyServerThreadPool-54] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:12:57.923 NPT [JettyServerThreadPool-46] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:13:02.669 NPT [JettyServerThreadPool-54] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:13:02.687 NPT [JettyServerThreadPool-54] INFO  com.waarc.team.TeamServiceImpl updateHome: line 215 - Deleted old image: uploads/accbefd4-2215-417e-8096-b90d36b16dce.png
+2026-03-01 18:13:02.690 NPT [JettyServerThreadPool-54] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 18:13:02.693 NPT [JettyServerThreadPool-54] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-01 18:13:10.304 NPT [JettyServerThreadPool-52] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:13:14.267 NPT [JettyServerThreadPool-54] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:13:14.275 NPT [JettyServerThreadPool-54] INFO  com.waarc.team.TeamServiceImpl updateHome: line 215 - Deleted old image: uploads/a72b526f-cfda-4c69-9c3b-e34896f2fa3e.png
+2026-03-01 18:13:14.276 NPT [JettyServerThreadPool-54] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 18:13:14.278 NPT [JettyServerThreadPool-54] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-01 18:13:24.011 NPT [JettyServerThreadPool-52] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:13:24.018 NPT [JettyServerThreadPool-52] ERROR com.waarc.team.TeamServiceImpl updateHome: line 243 - Error upserting team: null
 java.lang.NullPointerException
 	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
 	at java.base/java.util.ImmutableCollections$MapN.<init>(ImmutableCollections.java:1193)
 	at java.base/java.util.Map.of(Map.java:1457)
-	at com.waarc.home.HomeServiceImpl.updateHome(HomeServiceImpl.java:167)
-	at com.waarc.home.HomeController.lambda$new$1(HomeController.java:18)
+	at com.waarc.team.TeamServiceImpl.updateHome(HomeServiceImpl.java:167)
+	at com.waarc.team.TeamController.lambda$new$1(HomeController.java:18)
 	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
 	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
 	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
@@ -647,17 +647,682 @@ java.lang.NullPointerException
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2026-03-01 18:13:34.709 NPT [JettyServerThreadPool-54] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:13:34.715 NPT [JettyServerThreadPool-54] INFO  com.waarc.home.HomeServiceImpl updateHome: line 215 - Deleted old image: uploads/7268f715-45d8-465b-94c6-41ca4a4fe0dd.png
-2026-03-01 18:13:34.716 NPT [JettyServerThreadPool-54] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 18:13:34.717 NPT [JettyServerThreadPool-54] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
-2026-03-01 18:13:54.845 NPT [JettyServerThreadPool-37] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:13:54.849 NPT [JettyServerThreadPool-37] INFO  com.waarc.home.HomeServiceImpl updateHome: line 215 - Deleted old image: uploads/506086d4-7e72-412c-becf-ee0ceb07076d.png
-2026-03-01 18:13:54.849 NPT [JettyServerThreadPool-37] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 18:13:54.850 NPT [JettyServerThreadPool-37] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
-2026-03-01 18:17:52.423 NPT [JettyServerThreadPool-35] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
-2026-03-01 18:17:52.444 NPT [JettyServerThreadPool-35] INFO  com.waarc.home.HomeServiceImpl updateHome: line 215 - Deleted old image: uploads/19f9703f-7d60-4bd5-9ffa-de4272e9260d.png
-2026-03-01 18:17:52.445 NPT [JettyServerThreadPool-35] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
-2026-03-01 18:17:52.448 NPT [JettyServerThreadPool-35] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
-2026-03-01 18:17:55.505 NPT [JettyServerThreadPool-40] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
-2026-03-01 18:17:55.506 NPT [JettyServerThreadPool-37] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:13:34.709 NPT [JettyServerThreadPool-54] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:13:34.715 NPT [JettyServerThreadPool-54] INFO  com.waarc.team.TeamServiceImpl updateHome: line 215 - Deleted old image: uploads/7268f715-45d8-465b-94c6-41ca4a4fe0dd.png
+2026-03-01 18:13:34.716 NPT [JettyServerThreadPool-54] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 18:13:34.717 NPT [JettyServerThreadPool-54] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-01 18:13:54.845 NPT [JettyServerThreadPool-37] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:13:54.849 NPT [JettyServerThreadPool-37] INFO  com.waarc.team.TeamServiceImpl updateHome: line 215 - Deleted old image: uploads/506086d4-7e72-412c-becf-ee0ceb07076d.png
+2026-03-01 18:13:54.849 NPT [JettyServerThreadPool-37] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 18:13:54.850 NPT [JettyServerThreadPool-37] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-01 18:17:52.423 NPT [JettyServerThreadPool-35] INFO  com.waarc.team.TeamServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-01 18:17:52.444 NPT [JettyServerThreadPool-35] INFO  com.waarc.team.TeamServiceImpl updateHome: line 215 - Deleted old image: uploads/19f9703f-7d60-4bd5-9ffa-de4272e9260d.png
+2026-03-01 18:17:52.445 NPT [JettyServerThreadPool-35] INFO  com.waarc.team.TeamServiceImpl updateHome: line 237 - Updating existing team...
+2026-03-01 18:17:52.448 NPT [JettyServerThreadPool-35] INFO  com.waarc.team.TeamRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-01 18:17:55.505 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-01 18:17:55.506 NPT [JettyServerThreadPool-37] INFO  com.waarc.team.TeamRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-02 17:43:48.041 NPT [JettyServerThreadPool-43] INFO  com.waarc.user.UserServiceImplementation login: line 94 - User Logged In
+2026-03-02 17:44:13.313 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl save: line 62 - Creating Team!
+2026-03-02 17:45:28.541 NPT [JettyServerThreadPool-38] INFO  com.waarc.team.TeamServiceImpl save: line 62 - Creating Team!
+2026-03-02 17:47:10.705 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 17:47:19.809 NPT [JettyServerThreadPool-38] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 17:47:52.005 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 17:47:52.026 NPT [JettyServerThreadPool-44] ERROR com.waarc.team.TeamRepositoryImpl getTeamById: line 112 - Failed to get Team !Column 'banner_image' not found.
+2026-03-02 17:47:52.026 NPT [JettyServerThreadPool-44] ERROR com.waarc.team.TeamServiceImpl updateTeam: line 231 - Error updating Team: Column 'banner_image' not found.
+com.waarc.exception.OperationFailedException: Column 'banner_image' not found.
+	at com.waarc.team.TeamRepositoryImpl.getTeamById(TeamRepositoryImpl.java:113)
+	at com.waarc.team.TeamServiceImpl.updateTeam(TeamServiceImpl.java:151)
+	at com.waarc.team.TeamController.lambda$new$2(TeamController.java:20)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-02 17:51:01.105 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 17:51:01.152 NPT [JettyServerThreadPool-44] ERROR com.waarc.team.TeamServiceImpl updateTeam: line 231 - Error updating Team: null
+java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$MapN.<init>(ImmutableCollections.java:1193)
+	at java.base/java.util.Map.of(Map.java:1407)
+	at com.waarc.team.TeamServiceImpl.updateTeam(TeamServiceImpl.java:159)
+	at com.waarc.team.TeamController.lambda$new$2(TeamController.java:20)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-02 17:51:59.540 NPT [JettyServerThreadPool-42] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 17:51:59.592 NPT [JettyServerThreadPool-42] ERROR com.waarc.team.TeamServiceImpl updateTeam: line 231 - Error updating Team: null
+java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$MapN.<init>(ImmutableCollections.java:1193)
+	at java.base/java.util.Map.of(Map.java:1407)
+	at com.waarc.team.TeamServiceImpl.updateTeam(TeamServiceImpl.java:159)
+	at com.waarc.team.TeamController.lambda$new$2(TeamController.java:20)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-02 17:52:17.521 NPT [JettyServerThreadPool-48] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 17:52:17.555 NPT [JettyServerThreadPool-48] ERROR com.waarc.team.TeamServiceImpl updateTeam: line 231 - Error updating Team: null
+java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$MapN.<init>(ImmutableCollections.java:1193)
+	at java.base/java.util.Map.of(Map.java:1407)
+	at com.waarc.team.TeamServiceImpl.updateTeam(TeamServiceImpl.java:159)
+	at com.waarc.team.TeamController.lambda$new$2(TeamController.java:20)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-02 17:53:15.220 NPT [JettyServerThreadPool-48] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 17:53:15.272 NPT [JettyServerThreadPool-48] ERROR com.waarc.team.TeamServiceImpl updateTeam: line 231 - Error updating Team: null
+java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$MapN.<init>(ImmutableCollections.java:1193)
+	at java.base/java.util.Map.of(Map.java:1407)
+	at com.waarc.team.TeamServiceImpl.updateTeam(TeamServiceImpl.java:159)
+	at com.waarc.team.TeamController.lambda$new$2(TeamController.java:20)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-02 17:53:37.769 NPT [JettyServerThreadPool-39] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 17:54:19.975 NPT [JettyServerThreadPool-39] ERROR com.waarc.team.TeamServiceImpl updateTeam: line 231 - Error updating Team: null
+java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$MapN.<init>(ImmutableCollections.java:1193)
+	at java.base/java.util.Map.of(Map.java:1407)
+	at com.waarc.team.TeamServiceImpl.updateTeam(TeamServiceImpl.java:159)
+	at com.waarc.team.TeamController.lambda$new$2(TeamController.java:20)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-02 17:54:25.386 NPT [JettyServerThreadPool-42] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 17:55:14.076 NPT [JettyServerThreadPool-42] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 209 - Deleted old image: uploads\08d43c00-2fd3-4bc6-a6a4-a55b49a65625.png
+2026-03-02 17:55:19.304 NPT [JettyServerThreadPool-42] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 222 - Updating existing Team...
+2026-03-02 17:55:19.843 NPT [JettyServerThreadPool-42] ERROR com.waarc.team.TeamRepositoryImpl updateTeam: line 90 - Failed to update TeamData truncation: Truncated incorrect DOUBLE value: 'uploads\8aebc750-854b-4fbf-91c6-cd81fbe05e93.png'
+2026-03-02 17:55:29.360 NPT [JettyServerThreadPool-42] ERROR com.waarc.team.TeamServiceImpl updateTeam: line 231 - Error updating Team: Data truncation: Truncated incorrect DOUBLE value: 'uploads\8aebc750-854b-4fbf-91c6-cd81fbe05e93.png'
+com.waarc.exception.OperationFailedException: Data truncation: Truncated incorrect DOUBLE value: 'uploads\8aebc750-854b-4fbf-91c6-cd81fbe05e93.png'
+	at com.waarc.team.TeamRepositoryImpl.updateTeam(TeamRepositoryImpl.java:91)
+	at com.waarc.team.TeamServiceImpl.updateTeam(TeamServiceImpl.java:223)
+	at com.waarc.team.TeamController.lambda$new$2(TeamController.java:20)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-02 17:55:37.320 NPT [JettyServerThreadPool-48] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 17:55:41.444 NPT [JettyServerThreadPool-48] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 209 - Deleted old image: uploads\08d43c00-2fd3-4bc6-a6a4-a55b49a65625.png
+2026-03-02 17:55:48.597 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 17:55:48.650 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 209 - Deleted old image: uploads\08d43c00-2fd3-4bc6-a6a4-a55b49a65625.png
+2026-03-02 17:55:58.284 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 222 - Updating existing Team...
+2026-03-02 17:55:59.824 NPT [JettyServerThreadPool-41] ERROR com.waarc.team.TeamRepositoryImpl updateTeam: line 90 - Failed to update TeamData truncation: Truncated incorrect DOUBLE value: 'uploads\08e91350-1777-421d-845a-2e2f5ceed0aa.png'
+2026-03-02 17:56:32.090 NPT [JettyServerThreadPool-41] ERROR com.waarc.team.TeamServiceImpl updateTeam: line 231 - Error updating Team: Data truncation: Truncated incorrect DOUBLE value: 'uploads\08e91350-1777-421d-845a-2e2f5ceed0aa.png'
+com.waarc.exception.OperationFailedException: Data truncation: Truncated incorrect DOUBLE value: 'uploads\08e91350-1777-421d-845a-2e2f5ceed0aa.png'
+	at com.waarc.team.TeamRepositoryImpl.updateTeam(TeamRepositoryImpl.java:91)
+	at com.waarc.team.TeamServiceImpl.updateTeam(TeamServiceImpl.java:223)
+	at com.waarc.team.TeamController.lambda$new$2(TeamController.java:20)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-02 17:56:41.347 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 17:56:41.400 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 209 - Deleted old image: uploads\08d43c00-2fd3-4bc6-a6a4-a55b49a65625.png
+2026-03-02 17:56:41.417 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 222 - Updating existing Team...
+2026-03-02 17:56:41.429 NPT [JettyServerThreadPool-44] ERROR com.waarc.team.TeamRepositoryImpl updateTeam: line 90 - Failed to update TeamData truncation: Truncated incorrect DOUBLE value: 'uploads\20646932-818c-4637-aaef-d99fbde154cc.png'
+2026-03-02 17:56:41.429 NPT [JettyServerThreadPool-44] ERROR com.waarc.team.TeamServiceImpl updateTeam: line 231 - Error updating Team: Data truncation: Truncated incorrect DOUBLE value: 'uploads\20646932-818c-4637-aaef-d99fbde154cc.png'
+com.waarc.exception.OperationFailedException: Data truncation: Truncated incorrect DOUBLE value: 'uploads\20646932-818c-4637-aaef-d99fbde154cc.png'
+	at com.waarc.team.TeamRepositoryImpl.updateTeam(TeamRepositoryImpl.java:91)
+	at com.waarc.team.TeamServiceImpl.updateTeam(TeamServiceImpl.java:223)
+	at com.waarc.team.TeamController.lambda$new$2(TeamController.java:20)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-02 17:57:06.450 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 17:57:06.466 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 209 - Deleted old image: uploads\08d43c00-2fd3-4bc6-a6a4-a55b49a65625.png
+2026-03-02 17:57:06.483 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 222 - Updating existing Team...
+2026-03-02 17:57:06.483 NPT [JettyServerThreadPool-40] ERROR com.waarc.team.TeamRepositoryImpl updateTeam: line 90 - Failed to update TeamData truncation: Truncated incorrect DOUBLE value: 'uploads\d58b7a15-e6e2-47d3-8203-cb0b7afa66e3.png'
+2026-03-02 17:57:06.483 NPT [JettyServerThreadPool-40] ERROR com.waarc.team.TeamServiceImpl updateTeam: line 231 - Error updating Team: Data truncation: Truncated incorrect DOUBLE value: 'uploads\d58b7a15-e6e2-47d3-8203-cb0b7afa66e3.png'
+com.waarc.exception.OperationFailedException: Data truncation: Truncated incorrect DOUBLE value: 'uploads\d58b7a15-e6e2-47d3-8203-cb0b7afa66e3.png'
+	at com.waarc.team.TeamRepositoryImpl.updateTeam(TeamRepositoryImpl.java:91)
+	at com.waarc.team.TeamServiceImpl.updateTeam(TeamServiceImpl.java:223)
+	at com.waarc.team.TeamController.lambda$new$2(TeamController.java:20)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.produce(AdaptiveExecutionStrategy.java:193)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-02 17:59:34.960 NPT [JettyServerThreadPool-40] INFO  com.waarc.user.UserServiceImplementation login: line 94 - User Logged In
+2026-03-02 17:59:50.226 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 17:59:50.282 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 209 - Deleted old image: uploads\08d43c00-2fd3-4bc6-a6a4-a55b49a65625.png
+2026-03-02 17:59:50.301 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 222 - Updating existing Team...
+2026-03-02 17:59:50.318 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 86 - Team updated SuccessFul !
+2026-03-02 18:00:37.454 NPT [JettyServerThreadPool-38] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 18:00:37.488 NPT [JettyServerThreadPool-38] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 209 - Deleted old image: uploads\7634ac3b-c838-4c4d-8b44-88c58f0ce1ed.png
+2026-03-02 18:00:37.508 NPT [JettyServerThreadPool-38] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 222 - Updating existing Team...
+2026-03-02 18:00:37.519 NPT [JettyServerThreadPool-38] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 86 - Team updated SuccessFul !
+2026-03-02 18:01:16.213 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 18:01:16.278 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 209 - Deleted old image: uploads\c6db40a0-f04b-42bd-b433-4ec01686f0e9.png
+2026-03-02 18:01:16.296 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 222 - Updating existing Team...
+2026-03-02 18:01:16.311 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 86 - Team updated SuccessFul !
+2026-03-02 18:01:43.360 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamServiceImpl save: line 62 - Creating Team!
+2026-03-02 18:02:00.295 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 18:02:03.413 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 18:02:03.429 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 209 - Deleted old image: uploads\738a5acb-4d98-48d5-8799-27d6bfe0669a.png
+2026-03-02 18:02:03.457 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 222 - Updating existing Team...
+2026-03-02 18:02:03.465 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 86 - Team updated SuccessFul !
+2026-03-02 18:02:08.674 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 18:02:08.680 NPT [JettyServerThreadPool-44] ERROR com.waarc.team.TeamRepositoryImpl getTeamById: line 115 - Failed to get Team !Team not found
+2026-03-02 18:02:08.680 NPT [JettyServerThreadPool-44] ERROR com.waarc.team.TeamServiceImpl updateTeam: line 231 - Error updating Team: Team not found
+com.waarc.exception.OperationFailedException: Team not found
+	at com.waarc.team.TeamRepositoryImpl.getTeamById(TeamRepositoryImpl.java:116)
+	at com.waarc.team.TeamServiceImpl.updateTeam(TeamServiceImpl.java:151)
+	at com.waarc.team.TeamController.lambda$new$2(TeamController.java:20)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:199)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-02 18:05:10.049 NPT [JettyServerThreadPool-50] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 18:05:10.071 NPT [JettyServerThreadPool-50] ERROR com.waarc.team.TeamRepositoryImpl getTeamById: line 117 - Failed to get Team !Team not found
+2026-03-02 18:05:10.072 NPT [JettyServerThreadPool-50] ERROR com.waarc.team.TeamServiceImpl updateTeam: line 231 - Error updating Team: Team not found
+com.waarc.exception.OperationFailedException: Team not found
+	at com.waarc.team.TeamRepositoryImpl.getTeamById(TeamRepositoryImpl.java:118)
+	at com.waarc.team.TeamServiceImpl.updateTeam(TeamServiceImpl.java:151)
+	at com.waarc.team.TeamController.lambda$new$2(TeamController.java:20)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-02 18:05:19.174 NPT [JettyServerThreadPool-42] ERROR com.waarc.team.TeamRepositoryImpl getTeamById: line 117 - Failed to get Team !Team not found
+2026-03-02 18:05:19.174 NPT [JettyServerThreadPool-42] ERROR com.waarc.team.TeamServiceImpl deleteTeam: line 253 - Error deleting Team: Team not found
+com.waarc.exception.OperationFailedException: Team not found
+	at com.waarc.team.TeamRepositoryImpl.getTeamById(TeamRepositoryImpl.java:118)
+	at com.waarc.team.TeamServiceImpl.deleteTeam(TeamServiceImpl.java:245)
+	at com.waarc.team.TeamController.lambda$new$3(TeamController.java:23)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.produce(AdaptiveExecutionStrategy.java:193)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-02 18:07:54.036 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl deleteTeam: line 254 - Deleted team image: uploads\70f83e9d-7833-46ef-9d6d-d58ac3650338.png
+2026-03-02 18:08:07.403 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamServiceImpl save: line 62 - Creating Team!
+2026-03-02 18:08:27.738 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 18:08:27.741 NPT [JettyServerThreadPool-44] ERROR com.waarc.team.TeamRepositoryImpl getTeamById: line 117 - Failed to get Team !Team not found
+2026-03-02 18:08:27.744 NPT [JettyServerThreadPool-44] ERROR com.waarc.team.TeamServiceImpl updateTeam: line 231 - Error updating Team: Team not found
+com.waarc.exception.OperationFailedException: Team not found
+	at com.waarc.team.TeamRepositoryImpl.getTeamById(TeamRepositoryImpl.java:118)
+	at com.waarc.team.TeamServiceImpl.updateTeam(TeamServiceImpl.java:151)
+	at com.waarc.team.TeamController.lambda$new$2(TeamController.java:20)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:199)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-02 18:08:34.022 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 141 - Upserting Team!
+2026-03-02 18:08:34.046 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 209 - Deleted old image: uploads\dd93d832-4799-42db-9a0c-f9bd270c8c87.png
+2026-03-02 18:08:34.068 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 222 - Updating existing Team...
+2026-03-02 18:08:34.083 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-02 18:09:13.446 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamServiceImpl deleteTeam: line 254 - Deleted team image: uploads\e4fb9177-92a9-49a3-aa4c-8e370868cee9.png
