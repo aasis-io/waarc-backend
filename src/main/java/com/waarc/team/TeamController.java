@@ -12,6 +12,11 @@ public class TeamController {
         app.get("/getTeam",ctx -> {
            ctx.json(service.getTeam(ctx));
         });
+
+        //to get individual team member
+        app.get("/team",ctx -> {
+            ctx.json(service.getTeamMember(ctx));
+                });
         app.post("/team", ctx -> {
             ctx.json(service.save(ctx));
         });

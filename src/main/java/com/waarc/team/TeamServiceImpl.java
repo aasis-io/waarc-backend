@@ -6,6 +6,7 @@ import io.javalin.http.Context;
 import io.javalin.http.UploadedFile;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -243,6 +244,7 @@ public class TeamServiceImpl implements TeamService {
                 return "Bad Request: id is required";
             }
             Team team = teamRepository.getTeamById(id);
+            //checking if team is present
             String response = teamRepository.deleteTeam(String.valueOf(team.getId()));
 
             // Delete old image if exists
@@ -259,11 +261,38 @@ public class TeamServiceImpl implements TeamService {
             return response;
         }catch ( ResourceNotFoundException e) {
             ctx.status(404);
-            LOG.error("Error deleting Team: " + e.getMessage(), e);
+            LOG.error("Error deleting Team: " + e.getMessage());
             return "Team not Found";
         }catch (Exception e) {
             ctx.status(500);
             LOG.error("Error deleting Team: " + e.getMessage(), e);
+            return "Error: " + e.getMessage();
+        }
+    }
+
+    @Override
+    public String getTeamMember(@NotNull Context ctx) {
+        ctx.contentType("application/json");
+
+        try {
+            Team team = teamRepository.getTeamById(ctx.queryParam("id"));
+
+            // ✅ Convert local banner image path to URL for client
+            String bannerImagePath = team.getImage();
+            if (bannerImagePath != null && !bannerImagePath.isBlank()) {
+                // Get only the file name
+                String fileName = Paths.get(bannerImagePath).getFileName().toString();
+                // Prepend hosted path
+                team.setImage("/uploads/" + fileName);
+            }
+            return new Gson().toJson(team);
+        }catch (ResourceNotFoundException e) {
+            ctx.status(404);
+            LOG.error("Error updating Team: " + e.getMessage());
+            return "Error: " + e.getMessage();
+        } catch (Exception e) {
+            ctx.status(500);
+            LOG.error("Error updating Team: " + e.getMessage());
             return "Error: " + e.getMessage();
         }
     }

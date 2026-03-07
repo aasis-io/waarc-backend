@@ -113,6 +113,9 @@ public class TeamRepositoryImpl implements TeamRepository {
             } else {
                  throw  new ResourceNotFoundException("Team not found");
             }
+        } catch (ResourceNotFoundException e) {
+            LOG.error("Failed to get Team !" + e.getMessage());
+             throw e;
         } catch (Exception e) {
             LOG.error("Failed to get Team !" + e.getMessage());
             throw new OperationFailedException(e.getMessage(), 500);
