@@ -156,7 +156,7 @@ public class TeamServiceImpl implements TeamService {
             String position = ctx.formParam("position");
             String location = ctx.formParam("location");
 
-            // 3️⃣ Validate all required fields
+            // 3️⃣ Validate required fields
             Map<String, String> fields = Map.of(
                     "name", name,
                     "position", position,
@@ -169,6 +169,7 @@ public class TeamServiceImpl implements TeamService {
                     return "Bad Request: " + entry.getKey() + " is required";
                 }
             }
+
             // 4️⃣ Prepare request object
             TeamRequest request = new TeamRequest();
             request.setId(Integer.parseInt(id));
@@ -176,14 +177,11 @@ public class TeamServiceImpl implements TeamService {
             request.setPosition(position);
             request.setLocation(location);
 
-
             // 5️⃣ Handle file upload (optional)
             UploadedFile file = ctx.uploadedFile("image");
-            if( file == null) {
-                ctx.status(400);
-                return "Bad Request: Image is required";
-            }
+
             if (file != null) {
+
                 String contentType = file.contentType();
                 if (contentType == null || !contentType.startsWith("image/")) {
                     ctx.status(400);
@@ -201,9 +199,8 @@ public class TeamServiceImpl implements TeamService {
                 Path uploadDir = Paths.get("uploads");
                 Files.createDirectories(uploadDir);
 
-                // Delete old image if exists
-                if (existingTeam.getImage() != null
-                        && !existingTeam.getImage().isBlank()) {
+                // Delete old image
+                if (existingTeam.getImage() != null && !existingTeam.getImage().isBlank()) {
                     Path oldFile = Paths.get(existingTeam.getImage());
                     try {
                         Files.deleteIfExists(oldFile);
@@ -218,22 +215,28 @@ public class TeamServiceImpl implements TeamService {
                 try (InputStream is = file.content()) {
                     Files.copy(is, filePath, StandardCopyOption.REPLACE_EXISTING);
                 }
+
                 request.setImage(filePath.toString());
+
+            } else {
+                // ✅ Keep old image
+                request.setImage(existingTeam.getImage());
             }
+
             LOG.info("Updating existing Team...");
             return teamRepository.updateTeam(request);
 
-        }catch (ResourceNotFoundException e) {
+        } catch (ResourceNotFoundException e) {
             ctx.status(404);
             LOG.error("Error updating Team: " + e.getMessage(), e);
             return "Error: " + e.getMessage();
+
         } catch (Exception e) {
             ctx.status(500);
             LOG.error("Error updating Team: " + e.getMessage(), e);
             return "Error: " + e.getMessage();
         }
     }
-
     @Override
     public String deleteTeam(Context ctx) {
 
