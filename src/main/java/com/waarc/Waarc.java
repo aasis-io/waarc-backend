@@ -9,6 +9,7 @@ import com.waarc.blog.BlogController;
 import com.waarc.config.AppConfig;
 import com.waarc.config.Config;
 import com.waarc.dataLoader.DataLoader;
+import com.waarc.event.EventController;
 import com.waarc.eventRegistration.EventRegistrationController;
 import com.waarc.exception.AppExceptionHandler;
 import com.waarc.home.HomeController;
@@ -68,6 +69,7 @@ public class Waarc {
         new AppConfig(app);
         new HomeController(app);
         new TeamController(app);
+        new EventController(app);
         new UserController(app);
         new ServiceController(app);
         new SubscribeController(app);

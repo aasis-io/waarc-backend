@@ -1,19 +1,20 @@
 package com.waarc.event.pojo;
 
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class EventRequest {
+    private String title;
+    private String date;
+    private String link;
+    private String image;
 
-    private String name;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-    public EventRequest(String name) {
-        this.name = name;
-    }
-    public EventRequest() {
-    }
 }

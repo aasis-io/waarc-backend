@@ -7,10 +7,7 @@ import java.util.Optional;
 
 public interface EventRepository {
 
-    Optional<Event> getEvent(int id);
-    List<Event> getAllEvents();
-    Event save(EventRequest request);
-    Event updateEvent(EventRequest request, int EventId);
-    Event deleteEvent(int EventId);
-
+    Event getEvent();
+    String save(EventRequest request);
+    String deleteEvent();
 }

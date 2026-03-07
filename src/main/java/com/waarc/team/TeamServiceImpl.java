@@ -258,7 +258,7 @@ public class TeamServiceImpl implements TeamService {
                     Files.deleteIfExists(oldFile);
                     LOG.info("Deleted team image: " + team.getImage());
                 } catch (IOException e) {
-                    LOG.warn("Failed to delete team image: " + team.getImage(), e);
+                    LOG.warn("Failed to delete team image: "+ e.getMessage());
                 }
             }
             return response;

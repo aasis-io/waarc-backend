@@ -1,16 +1,16 @@
 package com.waarc.event;
 
 import com.waarc.event.pojo.EventRequest;
+import com.waarc.home.Home;
+import io.javalin.http.Context;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface EventService {
 
-    Event getEvent(int eventId);
-    List<Event> getAllEvents();
-    Event save(EventRequest request);
-    Event updateEvent(EventRequest request, int eventId);
-    Event deleteEvent(int eventId);
-
+    String getEvent(Context ctx);
+    String save(Context ctx);
+    String deleteEvent(Context ctx);
 
 }

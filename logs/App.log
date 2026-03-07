@@ -348,3 +348,267 @@ com.waarc.exception.ResourceNotFoundException: Team not found
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-07 12:14:22.616 NPT [JettyServerThreadPool-41] INFO  com.waarc.user.UserServiceImplementation login: line 94 - User Logged In
+2026-03-07 12:15:06.780 NPT [JettyServerThreadPool-44] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-07 12:15:06.790 NPT [JettyServerThreadPool-44] ERROR com.waarc.team.TeamRepositoryImpl getTeamById: line 117 - Failed to get Team !Team not found
+2026-03-07 12:15:06.792 NPT [JettyServerThreadPool-44] ERROR com.waarc.team.TeamServiceImpl updateTeam: line 231 - Error updating Team: Team not found
+com.waarc.exception.ResourceNotFoundException: Team not found
+	at com.waarc.team.TeamRepositoryImpl.getTeamById(TeamRepositoryImpl.java:114)
+	at com.waarc.team.TeamServiceImpl.updateTeam(TeamServiceImpl.java:152)
+	at com.waarc.team.TeamController.lambda$new$3(TeamController.java:25)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:199)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-07 12:15:28.665 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-07 12:15:28.728 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-07 12:15:28.755 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-07 12:15:51.654 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-07 12:15:51.680 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 207 - Deleted old image: uploads\27185a11-faa5-4ee0-a989-9c632e3ccae8.png
+2026-03-07 12:15:51.703 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-07 12:15:51.709 NPT [JettyServerThreadPool-45] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-07 13:24:57.882 NPT [main] INFO  com.waarc.user.UserRepositoryImplementation save: line 30 - User insertion initiated.
+2026-03-07 13:26:09.401 NPT [JettyServerThreadPool-43] INFO  com.waarc.event.EventServiceImpl save: line 52 - Creating Event!
+2026-03-07 13:26:15.708 NPT [JettyServerThreadPool-42] INFO  com.waarc.event.EventServiceImpl save: line 52 - Creating Event!
+2026-03-07 13:26:35.346 NPT [JettyServerThreadPool-44] INFO  com.waarc.event.EventServiceImpl save: line 52 - Creating Event!
+2026-03-07 13:26:35.385 NPT [JettyServerThreadPool-44] ERROR com.waarc.event.EventRepositoryImpl save: line 73 - Error :Data truncation: Incorrect datetime value: '20252555' for column 'date' at row 1
+2026-03-07 13:26:35.385 NPT [JettyServerThreadPool-44] ERROR com.waarc.event.EventServiceImpl save: line 123 - Error creating Event: Data truncation: Incorrect datetime value: '20252555' for column 'date' at row 1
+com.waarc.exception.OperationFailedException: Data truncation: Incorrect datetime value: '20252555' for column 'date' at row 1
+	at com.waarc.event.EventRepositoryImpl.save(EventRepositoryImpl.java:74)
+	at com.waarc.event.EventServiceImpl.save(EventServiceImpl.java:119)
+	at com.waarc.event.EventController.lambda$new$0(EventController.java:12)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:199)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-07 13:27:19.757 NPT [JettyServerThreadPool-38] INFO  com.waarc.event.EventServiceImpl save: line 52 - Creating Event!
+2026-03-07 13:27:23.793 NPT [JettyServerThreadPool-50] INFO  com.waarc.event.EventServiceImpl save: line 52 - Creating Event!
+2026-03-07 13:28:25.361 NPT [JettyServerThreadPool-43] INFO  com.waarc.event.EventServiceImpl save: line 52 - Creating Event!
+2026-03-07 13:28:25.445 NPT [JettyServerThreadPool-43] ERROR com.waarc.event.EventRepositoryImpl save: line 73 - Error :Duplicate entry '1' for key 'event.PRIMARY'
+2026-03-07 13:28:25.446 NPT [JettyServerThreadPool-43] ERROR com.waarc.event.EventServiceImpl save: line 123 - Error creating Event: Duplicate entry '1' for key 'event.PRIMARY'
+com.waarc.exception.OperationFailedException: Duplicate entry '1' for key 'event.PRIMARY'
+	at com.waarc.event.EventRepositoryImpl.save(EventRepositoryImpl.java:74)
+	at com.waarc.event.EventServiceImpl.save(EventServiceImpl.java:119)
+	at com.waarc.event.EventController.lambda$new$0(EventController.java:12)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-07 13:30:09.842 NPT [JettyServerThreadPool-44] INFO  com.waarc.user.UserServiceImplementation login: line 94 - User Logged In
+2026-03-07 13:30:50.917 NPT [JettyServerThreadPool-44] INFO  com.waarc.event.EventServiceImpl save: line 52 - Creating Event!
+2026-03-07 13:30:50.987 NPT [JettyServerThreadPool-44] ERROR com.waarc.event.EventRepositoryImpl save: line 73 - Error :Duplicate entry '1' for key 'event.PRIMARY'
+2026-03-07 13:30:50.987 NPT [JettyServerThreadPool-44] ERROR com.waarc.event.EventServiceImpl save: line 123 - Error creating Event: Duplicate entry '1' for key 'event.PRIMARY'
+com.waarc.exception.OperationFailedException: Duplicate entry '1' for key 'event.PRIMARY'
+	at com.waarc.event.EventRepositoryImpl.save(EventRepositoryImpl.java:74)
+	at com.waarc.event.EventServiceImpl.save(EventServiceImpl.java:119)
+	at com.waarc.event.EventController.lambda$new$0(EventController.java:13)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:199)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-07 13:31:12.756 NPT [JettyServerThreadPool-45] INFO  com.waarc.event.EventServiceImpl save: line 52 - Creating Event!
+2026-03-07 13:34:28.686 NPT [JettyServerThreadPool-50] INFO  com.waarc.event.EventServiceImpl save: line 52 - Creating Event!
+2026-03-07 13:35:19.912 NPT [JettyServerThreadPool-38] INFO  com.waarc.event.EventServiceImpl save: line 52 - Creating Event!
+2026-03-07 13:35:19.953 NPT [JettyServerThreadPool-38] ERROR com.waarc.event.EventRepositoryImpl save: line 73 - Error :Duplicate entry '1' for key 'event.PRIMARY'
+2026-03-07 13:35:19.953 NPT [JettyServerThreadPool-38] ERROR com.waarc.event.EventServiceImpl save: line 123 - Error creating Event: Duplicate entry '1' for key 'event.PRIMARY'
+2026-03-07 13:36:09.402 NPT [JettyServerThreadPool-43] INFO  com.waarc.event.EventServiceImpl save: line 52 - Creating Event!
+2026-03-07 13:37:56.187 NPT [JettyServerThreadPool-50] INFO  com.waarc.event.EventServiceImpl save: line 52 - Creating Event!
+2026-03-07 13:38:04.019 NPT [JettyServerThreadPool-40] INFO  com.waarc.event.EventServiceImpl save: line 52 - Creating Event!
+2026-03-07 13:38:04.055 NPT [JettyServerThreadPool-40] ERROR com.waarc.event.EventRepositoryImpl save: line 74 - Error :Duplicate entry '1' for key 'event.PRIMARY'
+2026-03-07 13:38:04.056 NPT [JettyServerThreadPool-40] ERROR com.waarc.event.EventServiceImpl save: line 123 - Error creating Event: Duplicate entry '1' for key 'event.PRIMARY'
+2026-03-07 13:38:15.036 NPT [JettyServerThreadPool-39] INFO  com.waarc.event.EventServiceImpl save: line 52 - Creating Event!
+2026-03-07 13:38:15.068 NPT [JettyServerThreadPool-39] ERROR com.waarc.event.EventRepositoryImpl save: line 74 - Error :Duplicate entry '1' for key 'event.PRIMARY'
+2026-03-07 13:38:15.069 NPT [JettyServerThreadPool-39] ERROR com.waarc.event.EventServiceImpl save: line 123 - Error creating Event: Duplicate entry '1' for key 'event.PRIMARY'
+2026-03-07 13:38:51.115 NPT [JettyServerThreadPool-45] INFO  com.waarc.user.UserServiceImplementation login: line 94 - User Logged In
+2026-03-07 13:40:15.183 NPT [JettyServerThreadPool-45] ERROR com.waarc.event.EventRepositoryImpl getEvent: line 40 - No event found
+2026-03-07 13:40:15.188 NPT [JettyServerThreadPool-45] ERROR com.waarc.event.EventServiceImpl deleteEvent: line 135 - Error getting event
+com.waarc.exception.ResourceNotFoundException: Event not found
+	at com.waarc.event.EventRepositoryImpl.getEvent(EventRepositoryImpl.java:41)
+	at com.waarc.event.EventServiceImpl.deleteEvent(EventServiceImpl.java:132)
+	at com.waarc.event.EventController.lambda$new$2(EventController.java:21)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$11$lambda$9$lambda$8(DefaultTasks.kt:55)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-07 13:40:25.124 NPT [JettyServerThreadPool-43] INFO  com.waarc.event.EventServiceImpl save: line 52 - Creating Event!
+2026-03-07 13:40:31.780 NPT [JettyServerThreadPool-42] INFO  com.waarc.event.EventRepositoryImpl deleteEvent: line 94 - Event deleted successfully
+2026-03-07 13:40:43.170 NPT [JettyServerThreadPool-41] INFO  com.waarc.event.EventServiceImpl save: line 52 - Creating Event!
+2026-03-07 13:40:50.343 NPT [JettyServerThreadPool-42] INFO  com.waarc.event.EventRepositoryImpl deleteEvent: line 94 - Event deleted successfully
+2026-03-07 13:43:51.000 NPT [JettyServerThreadPool-50] INFO  com.waarc.event.EventServiceImpl save: line 53 - Creating Event!
+2026-03-07 13:44:01.179 NPT [JettyServerThreadPool-41] INFO  com.waarc.event.EventRepositoryImpl deleteEvent: line 94 - Event deleted successfully
+2026-03-07 13:44:01.183 NPT [JettyServerThreadPool-41] INFO  com.waarc.event.EventServiceImpl deleteEvent: line 142 - Deleted team image: uploads\2b20c325-b7d2-4a5b-b059-a9ec82ee9f63.svg
