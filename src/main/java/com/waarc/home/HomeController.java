@@ -8,7 +8,7 @@ public class HomeController {
     private final com.waarc.home.HomeService service = new com.waarc.home.HomeServiceImpl();
 
     public HomeController(Javalin app){
-        app.before("/Home", AuthMiddleWare.requireLogin);
+        app.before("/home", AuthMiddleWare.requireLogin);
 
         app.get("/getHome",ctx -> {
            ctx.json(service.getHome(ctx));
