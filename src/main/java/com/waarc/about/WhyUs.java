@@ -5,22 +5,16 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
-
-@Getter
+/**
+ * @author <sachin.singh@moco.com.np>
+ * @created on : 08-03-2026 09:45
+ */
 @Setter
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class About {
+public class WhyUs {
 
-    private int id;
     private String title;
     private String description;
-    private String image;
-    private String metaTitle;
-    private String metaDescription;
-    private String metaKeywords;
-    private List<WhyUs> whyUs;
-
-
 }

@@ -13,6 +13,7 @@ import com.waarc.event.EventController;
 import com.waarc.eventRegistration.EventRegistrationController;
 import com.waarc.exception.AppExceptionHandler;
 import com.waarc.home.HomeController;
+import com.waarc.link.LinkController;
 import com.waarc.plan.PlanController;
 import com.waarc.service.ServiceController;
 
@@ -70,6 +71,7 @@ public class Waarc {
         new HomeController(app);
         new TeamController(app);
         new EventController(app);
+        new LinkController(app);
         new UserController(app);
         new ServiceController(app);
         new SubscribeController(app);

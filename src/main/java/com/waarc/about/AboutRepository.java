@@ -7,7 +7,9 @@ import java.util.Optional;
 
 public interface AboutRepository {
 
-    Optional<About> getAbout();
+    About getAbout();
     About save(AboutRequest request);
     About updateAbout(AboutRequest request);
+
+    Optional<About> getAboutById(String number);
 }

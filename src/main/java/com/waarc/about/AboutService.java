@@ -1,14 +1,15 @@
 package com.waarc.about;
 
 import com.waarc.about.pojo.AboutRequest;
+import io.javalin.http.Context;
 
 import java.util.List;
 
 public interface AboutService {
 
-    About getAbout();
-    About save(AboutRequest request);
-    About updateAbout(AboutRequest request);
+    String getAbout(Context ctx);
+    String save(Context ctx);
+    String updateAbout(Context ctx);
 
 
 

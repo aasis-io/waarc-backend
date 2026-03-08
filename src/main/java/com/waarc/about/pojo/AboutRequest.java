@@ -1,9 +1,12 @@
 package com.waarc.about.pojo;
 
+import com.waarc.about.WhyUs;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 /**
  * @author <sachin.singh@moco.com.np>
@@ -15,7 +18,12 @@ import lombok.Setter;
 @NoArgsConstructor
 public class AboutRequest {
     private int id;
+    private String title;
     private String description;
-
+    private String image;
+    private String metaTitle;
+    private String metaDescription;
+    private String metaKeywords;
+    private List<WhyUs> whyUs;
 
 }

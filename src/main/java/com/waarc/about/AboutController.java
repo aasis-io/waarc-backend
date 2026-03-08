@@ -11,18 +11,15 @@ public class AboutController {
         app.before("/about", AuthMiddleWare.requireLogin);
 
         app.post("/about",ctx -> {
-            AboutRequest request = ctx.bodyAsClass(AboutRequest.class);
-            ctx.json(service.save(request)).status(200);
+            ctx.json(service.save(ctx)).status(200);
         });
 
-
         app.get("/getAbout",ctx -> {
-           ctx.json(service.getAbout()).status(200);
+           ctx.json(service.getAbout(ctx));
         });
 
         app.put("/about", ctx -> {
-            AboutRequest request = ctx.bodyAsClass(AboutRequest.class);
-            ctx.json(service.updateAbout(request)).status(200);
+            ctx.json(service.updateAbout(ctx));
         });
     }
 }
