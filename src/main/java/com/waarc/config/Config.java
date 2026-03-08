@@ -16,47 +16,68 @@ import java.util.Properties;
 public class Config {
 
     private static final Logger LOG = LogManager.getLogger(Config.class);
-    private static final String CONFIG_FILE = "etc/config.properties";
+    private static final String CONFIG_FILE = "etc/config.properties"; // optional fallback
     private static Properties props;
 
     /**
-     * load config.properties file
+     * Load config from file if exists, otherwise rely on environment variables
      */
     private static void loadConfiguration() {
-        Log log;
-        try (InputStream file = new FileInputStream(CONFIG_FILE)) {
-            props = new Properties();
-            props.load(file);
+        props = new Properties();
+
+        // First, try to load from file
+        try (InputStream file = Config.class.getClassLoader().getResourceAsStream("config.properties")) {
+            if (file != null) {
+                props.load(file);
+                LOG.info("Configuration loaded from classpath config.properties");
+            } else {
+                LOG.warn("config.properties not found in classpath, relying on environment variables");
+            }
         } catch (IOException e) {
-            log = new Log(Log.Status.FAILED, Log.Section.CONFIG, "Error while loading " +
-                    "configuration file : " + e.getMessage());
-            LOG.debug(log.toString());
-            log = new Log(Log.Status.FAILED, Log.Section.CONFIG, "Error loading configuration" +
-                    "file");
+            Log log = new Log(Log.Status.FAILED, Log.Section.CONFIG,
+                    "Error while loading configuration file : " + e.getMessage());
             LOG.error(log.toString());
         }
     }
 
-    public static Properties getSectionProperties(String section) {
+    /**
+     * Get property by key, first from environment variables, then from loaded properties
+     */
+    public static String getProperty(String key) {
+        // Check environment variables first
+        String envValue = System.getenv(key.toUpperCase().replace(".", "_"));
+        if (envValue != null && !envValue.isEmpty()) {
+            return envValue.trim();
+        }
 
+        // Fallback to properties file
         if (props == null || props.isEmpty()) {
             loadConfiguration();
         }
-        final Properties p = new Properties();
+
+        String value = props.getProperty(key);
+        if (value != null) {
+            return value.trim();
+        }
+
+        LOG.warn("Property not found: " + key);
+        return null;
+    }
+
+    /**
+     * Get all properties for a section (optional)
+     */
+    public static Properties getSectionProperties(String section) {
+        if (props == null || props.isEmpty()) {
+            loadConfiguration();
+        }
+
+        Properties p = new Properties();
         props.forEach((key, value) -> {
             if (key.toString().contains(section)) {
                 p.put(key, value);
             }
         });
         return p;
-    }
-
-
-    public static String getProperty(String property) {
-
-        if (props == null || props.isEmpty()) {
-            loadConfiguration();
-        }
-        return props.getProperty(property).trim();
     }
 }
