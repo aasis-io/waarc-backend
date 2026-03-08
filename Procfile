@@ -1,1 +1,1 @@
-web: java -jar target/Waarc-1.0-SNAPSHOT-shaded.jar
+web: java -jar target/waarc-backend.jar
