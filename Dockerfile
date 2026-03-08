@@ -1,14 +1,14 @@
-# Use official OpenJDK 17 slim variant
-FROM openjdk:17-jdk-bullseye
+# Use Eclipse Temurin JDK 17 base image
+FROM eclipse-temurin:17-jdk
 
 # Set working directory
 WORKDIR /app
 
-# Copy project jar (update the jar name if needed)
+# Copy the built jar file
 COPY target/waarc-backend.jar app.jar
 
-# Expose port (Render will override with $PORT)
+# Expose the port (Render will override it with $PORT)
 EXPOSE 7001
 
-# Start the application
+# Run the application
 CMD ["sh", "-c", "java -jar app.jar"]
