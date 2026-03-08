@@ -1,7 +1,7 @@
 # Use official OpenJDK 17 slim image
 FROM openjdk:17-jdk-slim
 
-# Set working directory
+# Set working director
 WORKDIR /app
 
 # Copy project jar (update the jar name if needed)
