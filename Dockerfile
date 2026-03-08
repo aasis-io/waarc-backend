@@ -4,19 +4,18 @@ FROM eclipse-temurin:17-jdk
 # Set working directory
 WORKDIR /app
 
-# Copy pom.xml and source code
+# Install Maven
+RUN apt-get update && apt-get install -y maven git && rm -rf /var/lib/apt/lists/*
+
+# Copy project files
 COPY pom.xml .
 COPY src ./src
 
-# Build the project inside Docke
-RUN apt-get update && apt-get install -y maven && \
-    mvn clean package -DskipTests
+# Build the project inside the container
+RUN mvn clean package -DskipTests
 
-# Copy the generated jar (path inside container)
-COPY target/waarc-backend.jar app.jar
+# Run the built jar (replace with your actual jar name from target/)
+CMD ["sh", "-c", "java -jar target/waarc-backend.jar"]
 
 # Expose port (Render overrides $PORT)
 EXPOSE 7001
-
-# Start the app
-CMD ["sh", "-c", "java -jar app.jar"]
