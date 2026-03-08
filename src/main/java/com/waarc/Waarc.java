@@ -22,6 +22,8 @@ import com.waarc.subscriber.SubscribeController;
 import com.waarc.team.TeamController;
 import com.waarc.user.UserController;
 import com.waarc.work.WorkController;
+
+import com.waarc.analytics.AnalyticsController;
 import io.javalin.Javalin;
 import io.javalin.http.staticfiles.Location;
 import io.javalin.validation.ValidationException;
@@ -77,6 +79,7 @@ public class Waarc {
         new SubscribeController(app);
         new AboutController(app);
         new BlogController(app);
+        new AnalyticsController(app);
         new EventRegistrationController(app);
         new PlanController(app);
         new WorkController(app);

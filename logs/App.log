@@ -759,3 +759,156 @@ java.lang.IllegalArgumentException: Bad Request: link is required
 2026-03-08 11:57:45.022 NPT [JettyServerThreadPool-40] ERROR com.waarc.link.LinkRepositoryImpl getlinkById: line 111 - Failed to get link! Link not Found
 2026-03-08 11:57:50.215 NPT [JettyServerThreadPool-45] INFO  com.waarc.link.LinkServiceImpl deleteLink: line 104 - Deleting link!
 2026-03-08 11:58:01.316 NPT [JettyServerThreadPool-45] ERROR com.waarc.link.LinkRepositoryImpl getlinkById: line 111 - Failed to get link! Link not Found
+2026-03-08 12:08:15.804 NPT [JettyServerThreadPool-36] INFO  com.waarc.user.UserServiceImplementation login: line 94 - User Logged In
+2026-03-08 12:08:45.480 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-08 12:08:45.498 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeServiceImpl updateHome: line 234 - Home not found, creating new home...
+2026-03-08 12:08:49.086 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:08:49.086 NPT [JettyServerThreadPool-40] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:08:52.909 NPT [JettyServerThreadPool-40] ERROR com.waarc.event.EventRepositoryImpl getEvent: line 40 - No event found
+2026-03-08 12:08:52.909 NPT [JettyServerThreadPool-35] ERROR com.waarc.event.EventRepositoryImpl getEvent: line 40 - No event found
+2026-03-08 12:08:52.910 NPT [JettyServerThreadPool-35] ERROR com.waarc.event.EventServiceImpl getEvent: line 39 - Error getting event
+2026-03-08 12:08:52.910 NPT [JettyServerThreadPool-40] ERROR com.waarc.event.EventServiceImpl getEvent: line 39 - Error getting event
+2026-03-08 12:09:03.692 NPT [JettyServerThreadPool-36] INFO  com.waarc.event.EventServiceImpl save: line 53 - Creating Event!
+2026-03-08 12:12:23.896 NPT [JettyServerThreadPool-36] INFO  com.waarc.link.LinkServiceImpl save: line 39 - Creating link!
+2026-03-08 12:12:37.386 NPT [JettyServerThreadPool-46] INFO  com.waarc.link.LinkServiceImpl save: line 39 - Creating link!
+2026-03-08 12:12:40.502 NPT [JettyServerThreadPool-41] INFO  com.waarc.link.LinkServiceImpl save: line 39 - Creating link!
+2026-03-08 12:16:35.335 NPT [JettyServerThreadPool-47] INFO  com.waarc.team.TeamServiceImpl save: line 63 - Creating Team!
+2026-03-08 12:16:43.625 NPT [JettyServerThreadPool-40] INFO  com.waarc.team.TeamServiceImpl deleteTeam: line 259 - Deleted team image: uploads/07647de5-868e-43ab-97f2-f8a70eb1b39a.png
+2026-03-08 12:16:57.995 NPT [JettyServerThreadPool-34] INFO  com.waarc.team.TeamServiceImpl save: line 63 - Creating Team!
+2026-03-08 12:19:23.698 NPT [JettyServerThreadPool-49] INFO  com.waarc.team.TeamServiceImpl save: line 63 - Creating Team!
+2026-03-08 12:19:30.611 NPT [JettyServerThreadPool-46] INFO  com.waarc.team.TeamServiceImpl deleteTeam: line 259 - Deleted team image: uploads/7bf05eba-0389-45c7-ba76-2406f8a55942.jpg
+2026-03-08 12:19:35.588 NPT [JettyServerThreadPool-47] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-08 12:19:35.598 NPT [JettyServerThreadPool-47] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-08 12:19:35.603 NPT [JettyServerThreadPool-47] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-08 12:19:46.141 NPT [JettyServerThreadPool-40] INFO  com.waarc.link.LinkServiceImpl save: line 39 - Creating link!
+2026-03-08 12:20:20.475 NPT [JettyServerThreadPool-41] INFO  com.waarc.link.LinkServiceImpl deleteLink: line 104 - Deleting link!
+2026-03-08 12:21:56.860 NPT [JettyServerThreadPool-34] INFO  com.waarc.link.LinkServiceImpl deleteLink: line 104 - Deleting link!
+2026-03-08 12:31:31.270 NPT [JettyServerThreadPool-34] INFO  com.waarc.user.UserServiceImplementation login: line 94 - User Logged In
+2026-03-08 12:32:21.144 NPT [JettyServerThreadPool-56] INFO  com.waarc.link.LinkServiceImpl updateLink: line 53 - Updating link!
+2026-03-08 12:32:21.153 NPT [JettyServerThreadPool-56] INFO  com.waarc.link.LinkServiceImpl updateLink: line 64 - Updating existing link...
+2026-03-08 12:32:31.558 NPT [JettyServerThreadPool-47] INFO  com.waarc.link.LinkServiceImpl updateLink: line 53 - Updating link!
+2026-03-08 12:32:31.562 NPT [JettyServerThreadPool-47] INFO  com.waarc.link.LinkServiceImpl updateLink: line 64 - Updating existing link...
+2026-03-08 12:33:13.089 NPT [JettyServerThreadPool-41] INFO  com.waarc.link.LinkServiceImpl updateLink: line 53 - Updating link!
+2026-03-08 12:33:13.092 NPT [JettyServerThreadPool-41] INFO  com.waarc.link.LinkServiceImpl updateLink: line 64 - Updating existing link...
+2026-03-08 12:35:38.804 NPT [JettyServerThreadPool-40] INFO  com.waarc.link.LinkServiceImpl save: line 39 - Creating link!
+2026-03-08 12:35:47.365 NPT [JettyServerThreadPool-57] INFO  com.waarc.user.UserServiceImplementation login: line 94 - User Logged In
+2026-03-08 12:36:57.365 NPT [JettyServerThreadPool-34] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:36:57.365 NPT [JettyServerThreadPool-57] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:37:01.396 NPT [JettyServerThreadPool-53] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:37:01.396 NPT [JettyServerThreadPool-47] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:37:07.945 NPT [JettyServerThreadPool-57] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-08 12:37:07.954 NPT [JettyServerThreadPool-57] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
+2026-03-08 12:37:07.958 NPT [JettyServerThreadPool-57] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-08 12:37:10.247 NPT [JettyServerThreadPool-57] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:37:10.247 NPT [JettyServerThreadPool-47] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:37:21.645 NPT [JettyServerThreadPool-57] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:37:21.645 NPT [JettyServerThreadPool-47] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:37:37.301 NPT [JettyServerThreadPool-34] INFO  com.waarc.link.LinkServiceImpl updateLink: line 53 - Updating link!
+2026-03-08 12:37:37.306 NPT [JettyServerThreadPool-34] INFO  com.waarc.link.LinkServiceImpl updateLink: line 64 - Updating existing link...
+2026-03-08 12:41:32.947 NPT [JettyServerThreadPool-46] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:41:32.947 NPT [JettyServerThreadPool-58] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:41:36.442 NPT [JettyServerThreadPool-56] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:41:36.442 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:41:43.580 NPT [JettyServerThreadPool-58] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-08 12:41:43.589 NPT [JettyServerThreadPool-58] INFO  com.waarc.home.HomeServiceImpl updateHome: line 215 - Deleted old image: uploads/2bcc3859-dc54-42ca-afd2-38bd21452eca.png
+2026-03-08 12:41:43.590 NPT [JettyServerThreadPool-58] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
+2026-03-08 12:41:43.594 NPT [JettyServerThreadPool-58] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-08 12:41:43.952 NPT [JettyServerThreadPool-56] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-08 12:41:43.964 NPT [JettyServerThreadPool-56] INFO  com.waarc.home.HomeServiceImpl updateHome: line 215 - Deleted old image: uploads/e75eb47d-0570-4d87-a799-6fcd6f8b83d9.jpg
+2026-03-08 12:41:43.966 NPT [JettyServerThreadPool-56] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
+2026-03-08 12:41:43.972 NPT [JettyServerThreadPool-56] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-08 12:41:46.045 NPT [JettyServerThreadPool-56] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:41:46.045 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:42:15.373 NPT [JettyServerThreadPool-56] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:42:15.373 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:42:30.874 NPT [JettyServerThreadPool-41] INFO  com.waarc.event.EventRepositoryImpl deleteEvent: line 94 - Event deleted successfully
+2026-03-08 12:42:30.876 NPT [JettyServerThreadPool-41] INFO  com.waarc.event.EventServiceImpl deleteEvent: line 142 - Deleted team image: uploads/bca0f888-2862-4c04-b2c6-0ea0cdac930d.png
+2026-03-08 12:42:39.434 NPT [JettyServerThreadPool-46] INFO  com.waarc.event.EventServiceImpl save: line 53 - Creating Event!
+2026-03-08 12:42:49.869 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl save: line 63 - Creating Team!
+2026-03-08 12:42:57.454 NPT [JettyServerThreadPool-46] INFO  com.waarc.user.UserServiceImplementation login: line 94 - User Logged In
+2026-03-08 12:43:35.281 NPT [JettyServerThreadPool-61] INFO  com.waarc.link.LinkServiceImpl save: line 39 - Creating link!
+2026-03-08 12:43:44.470 NPT [JettyServerThreadPool-61] INFO  com.waarc.team.TeamServiceImpl save: line 63 - Creating Team!
+2026-03-08 12:44:50.915 NPT [JettyServerThreadPool-53] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:44:50.919 NPT [JettyServerThreadPool-60] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:47:40.135 NPT [JettyServerThreadPool-41] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:47:40.143 NPT [JettyServerThreadPool-53] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:47:55.437 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-08 12:47:55.442 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-08 12:47:55.445 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-08 12:49:48.039 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-08 12:49:48.048 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-08 12:49:48.051 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-08 12:49:49.766 NPT [JettyServerThreadPool-62] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-08 12:49:49.776 NPT [JettyServerThreadPool-62] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-08 12:49:49.778 NPT [JettyServerThreadPool-62] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-08 12:49:57.433 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-08 12:49:57.444 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-08 12:49:57.446 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-08 12:50:09.987 NPT [JettyServerThreadPool-57] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-08 12:50:09.996 NPT [JettyServerThreadPool-57] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-08 12:50:09.998 NPT [JettyServerThreadPool-57] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-08 12:50:21.007 NPT [JettyServerThreadPool-62] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-08 12:50:21.012 NPT [JettyServerThreadPool-62] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-08 12:50:21.014 NPT [JettyServerThreadPool-62] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-08 12:50:23.657 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-08 12:50:23.661 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-08 12:50:23.662 NPT [JettyServerThreadPool-41] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-08 12:52:33.238 NPT [JettyServerThreadPool-60] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-08 12:52:33.250 NPT [JettyServerThreadPool-60] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-08 12:52:33.251 NPT [JettyServerThreadPool-60] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-08 12:52:33.808 NPT [JettyServerThreadPool-46] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-08 12:52:33.817 NPT [JettyServerThreadPool-46] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-08 12:52:33.819 NPT [JettyServerThreadPool-46] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-08 12:54:17.199 NPT [JettyServerThreadPool-34] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-08 12:54:17.209 NPT [JettyServerThreadPool-34] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-08 12:54:17.210 NPT [JettyServerThreadPool-34] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-08 12:54:38.957 NPT [JettyServerThreadPool-34] INFO  com.waarc.user.UserServiceImplementation login: line 94 - User Logged In
+2026-03-08 12:54:48.157 NPT [JettyServerThreadPool-57] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-08 12:54:48.165 NPT [JettyServerThreadPool-57] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-08 12:54:48.168 NPT [JettyServerThreadPool-57] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-08 12:55:06.870 NPT [JettyServerThreadPool-66] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-08 12:55:06.876 NPT [JettyServerThreadPool-66] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-08 12:55:06.878 NPT [JettyServerThreadPool-66] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-08 12:55:26.441 NPT [JettyServerThreadPool-34] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-08 12:55:26.446 NPT [JettyServerThreadPool-34] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-08 12:55:26.447 NPT [JettyServerThreadPool-34] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-08 12:56:18.983 NPT [JettyServerThreadPool-60] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:56:18.983 NPT [JettyServerThreadPool-46] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 12:56:21.310 NPT [JettyServerThreadPool-63] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-08 12:56:21.317 NPT [JettyServerThreadPool-63] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
+2026-03-08 12:56:21.318 NPT [JettyServerThreadPool-63] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-08 12:56:21.787 NPT [JettyServerThreadPool-34] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-08 12:56:21.797 NPT [JettyServerThreadPool-34] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
+2026-03-08 12:56:21.799 NPT [JettyServerThreadPool-34] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-08 12:56:23.198 NPT [JettyServerThreadPool-57] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-08 12:56:23.209 NPT [JettyServerThreadPool-57] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
+2026-03-08 12:56:23.211 NPT [JettyServerThreadPool-57] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-08 12:56:23.767 NPT [JettyServerThreadPool-63] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-08 12:56:23.773 NPT [JettyServerThreadPool-63] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
+2026-03-08 12:56:23.774 NPT [JettyServerThreadPool-63] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-08 12:56:25.089 NPT [JettyServerThreadPool-34] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-08 12:56:25.099 NPT [JettyServerThreadPool-34] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
+2026-03-08 12:56:25.108 NPT [JettyServerThreadPool-34] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-08 12:56:30.604 NPT [JettyServerThreadPool-63] INFO  com.waarc.home.HomeServiceImpl updateHome: line 153 - Upserting Home!
+2026-03-08 12:56:30.612 NPT [JettyServerThreadPool-63] INFO  com.waarc.home.HomeServiceImpl updateHome: line 237 - Updating existing home...
+2026-03-08 12:56:30.613 NPT [JettyServerThreadPool-63] INFO  com.waarc.home.HomeRepositoryImpl updateHome: line 91 - Home updated SuccessFul !
+2026-03-08 12:56:42.300 NPT [JettyServerThreadPool-34] INFO  com.waarc.link.LinkServiceImpl updateLink: line 53 - Updating link!
+2026-03-08 12:56:42.304 NPT [JettyServerThreadPool-34] INFO  com.waarc.link.LinkServiceImpl updateLink: line 64 - Updating existing link...
+2026-03-08 12:57:10.300 NPT [JettyServerThreadPool-63] INFO  com.waarc.link.LinkServiceImpl updateLink: line 53 - Updating link!
+2026-03-08 12:57:10.305 NPT [JettyServerThreadPool-63] INFO  com.waarc.link.LinkServiceImpl updateLink: line 64 - Updating existing link...
+2026-03-08 12:57:16.005 NPT [JettyServerThreadPool-60] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-08 12:57:16.016 NPT [JettyServerThreadPool-60] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-08 12:57:16.020 NPT [JettyServerThreadPool-60] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-08 12:57:33.365 NPT [JettyServerThreadPool-66] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 142 - Upserting Team!
+2026-03-08 12:57:33.371 NPT [JettyServerThreadPool-66] INFO  com.waarc.team.TeamServiceImpl updateTeam: line 226 - Updating existing Team...
+2026-03-08 12:57:33.374 NPT [JettyServerThreadPool-66] INFO  com.waarc.team.TeamRepositoryImpl updateTeam: line 88 - Team updated SuccessFul !
+2026-03-08 13:44:31.468 NPT [JettyServerThreadPool-34] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 13:44:31.468 NPT [JettyServerThreadPool-68] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 13:46:10.624 NPT [JettyServerThreadPool-46] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 13:46:10.624 NPT [JettyServerThreadPool-63] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 13:48:03.960 NPT [JettyServerThreadPool-35] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 13:48:03.960 NPT [JettyServerThreadPool-36] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 13:51:27.691 NPT [JettyServerThreadPool-36] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 13:51:27.691 NPT [JettyServerThreadPool-35] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 13:53:39.623 NPT [JettyServerThreadPool-35] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 13:53:39.623 NPT [JettyServerThreadPool-36] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !

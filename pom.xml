@@ -102,8 +102,13 @@
             <artifactId>jbcrypt</artifactId>
             <version>0.4</version> 
         </dependency>
-        
-        
+
+        <!-- GA4 Data API -->
+        <dependency>
+            <groupId>com.google.analytics</groupId>
+            <artifactId>google-analytics-data</artifactId>
+            <version>0.81.0</version>
+        </dependency>
         
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
