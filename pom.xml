@@ -202,13 +202,29 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
-                            <!-- Replace with your main class -->
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>com.waarc.Waarc</mainClass>
                                 </transformer>
+                                <!-- Merge service files if needed -->
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                                    <resource>META-INF/services/javax.servlet.ServletContainerInitializer</resource>
+                                </transformer>
                             </transformers>
-                            <!-- Output JAR filename -->
+
+                            <!-- This removes problematic signature files -->
+                            <filters>
+                                <filter>
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/*.SF</exclude>
+                                        <exclude>META-INF/*.DSA</exclude>
+                                        <exclude>META-INF/*.RSA</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
+
+                            <!-- Output JAR name -->
                             <finalName>waarc-backend</finalName>
                         </configuration>
                     </execution>
