@@ -1,0 +1,2 @@
+# Ignore secrets
+target/classes/ga4-service-account.json

@@ -912,3 +912,9 @@ java.lang.IllegalArgumentException: Bad Request: link is required
 2026-03-08 13:51:27.691 NPT [JettyServerThreadPool-35] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
 2026-03-08 13:53:39.623 NPT [JettyServerThreadPool-35] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
 2026-03-08 13:53:39.623 NPT [JettyServerThreadPool-36] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 14:50:28.937 GMT+05:45 [JettyServerThreadPool-75] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 14:50:28.953 GMT+05:45 [JettyServerThreadPool-65] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 14:51:04.452 GMT+05:45 [JettyServerThreadPool-75] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 14:51:04.452 GMT+05:45 [JettyServerThreadPool-59] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 14:51:06.077 GMT+05:45 [JettyServerThreadPool-64] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
+2026-03-08 14:51:06.077 GMT+05:45 [JettyServerThreadPool-58] INFO  com.waarc.home.HomeRepositoryImpl getHome: line 26 - Getting Home !
