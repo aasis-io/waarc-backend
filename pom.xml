@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mycompany</groupId>
@@ -24,30 +26,28 @@
             <version>${javalin.version}</version>
         </dependency>
 
-        <!-- Javalin bundle (optional utilities) -->
-        <dependency>
-            <groupId>io.javalin</groupId>
-            <artifactId>javalin-bundle</artifactId>
-            <version>${javalin.version}</version>
-        </dependency>
-
         <!-- OpenAPI / Swagger / ReDoc plugins -->
         <dependency>
             <groupId>io.javalin.community.openapi</groupId>
             <artifactId>javalin-openapi-plugin</artifactId>
             <version>${javalin.version}</version>
         </dependency>
-
         <dependency>
             <groupId>io.javalin.community.openapi</groupId>
             <artifactId>javalin-swagger-plugin</artifactId>
             <version>${javalin.version}</version>
         </dependency>
-
         <dependency>
             <groupId>io.javalin.community.openapi</groupId>
             <artifactId>javalin-redoc-plugin</artifactId>
             <version>${javalin.version}</version>
+        </dependency>
+
+        <!-- Brotli4j (required by Swagger/Redoc) -->
+        <dependency>
+            <groupId>com.aayushatharva.brotli4j</groupId>
+            <artifactId>brotli4j</artifactId>
+            <version>1.7.0</version>
         </dependency>
 
         <!-- Database connection pool -->
@@ -56,7 +56,6 @@
             <artifactId>commons-dbcp2</artifactId>
             <version>2.13.0</version>
         </dependency>
-
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-pool2</artifactId>
@@ -69,20 +68,18 @@
             <artifactId>log4j-api</artifactId>
             <version>2.25.0</version>
         </dependency>
-
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>2.25.0</version>
         </dependency>
-
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>2.0.17</version>
         </dependency>
 
-        <!-- JSON mapper -->
+        <!-- JSON -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
@@ -95,21 +92,22 @@
             <artifactId>mysql-connector-j</artifactId>
             <version>8.3.0</version>
         </dependency>
-        
-        
+
+        <!-- BCrypt -->
         <dependency>
             <groupId>org.mindrot</groupId>
             <artifactId>jbcrypt</artifactId>
-            <version>0.4</version> 
+            <version>0.4</version>
         </dependency>
 
-        <!-- GA4 Data API -->
+        <!-- GA4 Analytics API -->
         <dependency>
             <groupId>com.google.analytics</groupId>
             <artifactId>google-analytics-data</artifactId>
             <version>0.81.0</version>
         </dependency>
-        
+
+        <!-- JWT -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-api</artifactId>
@@ -127,34 +125,34 @@
             <version>0.11.5</version>
             <scope>runtime</scope>
         </dependency>
-         
-        <!-- for sending mail -->
+
+        <!-- Mail -->
         <dependency>
             <groupId>jakarta.mail</groupId>
             <artifactId>jakarta.mail-api</artifactId>
             <version>2.0.1</version>
         </dependency>
-
         <dependency>
             <groupId>com.sun.mail</groupId>
             <artifactId>jakarta.mail</artifactId>
             <version>2.0.1</version>
         </dependency>
 
+        <!-- Gson -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.11.0</version>
         </dependency>
-        
-        <!--- for cloudinay-->
+
+        <!-- Cloudinary -->
         <dependency>
             <groupId>com.cloudinary</groupId>
             <artifactId>cloudinary-http44</artifactId>
             <version>1.30.0</version>
         </dependency>
 
-        <!-- Source: https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -162,18 +160,17 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- Dotenv -->
         <dependency>
             <groupId>io.github.cdimascio</groupId>
             <artifactId>dotenv-java</artifactId>
             <version>3.0.0</version>
         </dependency>
-
     </dependencies>
 
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
         <plugins>
-
             <!-- Maven Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -187,16 +184,16 @@
                             <artifactId>openapi-annotation-processor</artifactId>
                             <version>${javalin.version}</version>
                         </annotationProcessorPath>
-                        <path>
+                        <annotationProcessorPath>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
                             <version>1.18.42</version>
-                        </path>
+                        </annotationProcessorPath>
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
 
-            <!-- Maven Shade Plugin: create fat JAR for Railway -->
+            <!-- Maven Shade Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -204,21 +201,16 @@
                 <executions>
                     <execution>
                         <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
+                        <goals><goal>shade</goal></goals>
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>com.waarc.Waarc</mainClass>
                                 </transformer>
-                                <!-- Merge service files if needed -->
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
                                     <resource>META-INF/services/javax.servlet.ServletContainerInitializer</resource>
                                 </transformer>
                             </transformers>
-
-                            <!-- This removes problematic signature files -->
                             <filters>
                                 <filter>
                                     <artifact>*:*</artifact>
@@ -229,15 +221,13 @@
                                     </excludes>
                                 </filter>
                             </filters>
-
-                            <!-- Output JAR name -->
                             <finalName>waarc-backend</finalName>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
 
-            <!-- Exec Plugin (optional: run locally with Maven) -->
+            <!-- Exec Maven Plugin -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -246,7 +236,6 @@
                     <mainClass>com.waarc.Waarc</mainClass>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
 </project>

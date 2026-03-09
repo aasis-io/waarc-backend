@@ -17,7 +17,8 @@ public class AppConfig {
             List<String> allowedOrigins = Arrays.asList(
                     "http://localhost:5173",
                     "http://localhost:5174",
-                    "http://localhost:8081"
+                    "http://localhost:8081",
+                    "https://admin.waarc.edu.np"
             );
             
             if(allowedOrigins.contains(requestedOrigin)) {
