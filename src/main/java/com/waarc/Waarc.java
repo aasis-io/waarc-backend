@@ -12,19 +12,18 @@ import com.waarc.home.HomeController;
 import com.waarc.link.LinkController;
 import com.waarc.plan.PlanController;
 import com.waarc.service.ServiceController;
-
 import com.waarc.siteSetting.SiteSettingController;
 import com.waarc.subscriber.SubscribeController;
 import com.waarc.team.TeamController;
 import com.waarc.user.UserController;
 import com.waarc.work.WorkController;
-
 import com.waarc.analytics.AnalyticsController;
 import io.javalin.Javalin;
 import io.javalin.http.staticfiles.Location;
 import io.javalin.validation.ValidationException;
 import org.apache.logging.log4j.core.config.Configurator;
 
+import java.io.File;
 import java.util.Map;
 
 /**
@@ -41,7 +40,6 @@ public class Waarc {
 
     static {
         var logConfigStream = Waarc.class.getClassLoader().getResourceAsStream("log4j2.properties");
-
         if (logConfigStream != null) {
             Configurator.initialize("WaarcLogger", "log4j2.properties");
         } else {
@@ -51,22 +49,48 @@ public class Waarc {
 
     public static void main(String[] args) {
 
+        // --------------------------
+        // Ensure uploads folder exists
+        // --------------------------
+        String uploadsPath;
+        if (System.getenv("RENDER") != null) {
+            // Running on Render container
+            uploadsPath = "/app/uploads";
+        } else {
+            // Running locally
+            uploadsPath = "uploads";
+        }
+
+        File uploadDir = new File(uploadsPath);
+        if (!uploadDir.exists()) {
+            boolean created = uploadDir.mkdirs();
+            if (created) System.out.println("Created uploads directory: " + uploadsPath);
+            else System.err.println("Failed to create uploads directory: " + uploadsPath);
+        }
+
+        // --------------------------
         // Load initial data
+        // --------------------------
         DataLoader dataLoader = new DataLoader();
         dataLoader.load();
 
+        // --------------------------
         // Start Javalin server
+        // --------------------------
         var app = Javalin.create(config -> {
 
             // Static file setup for uploads
             config.staticFiles.add(staticFileConfig -> {
                 staticFileConfig.hostedPath = "/uploads"; // URL prefix
-                staticFileConfig.directory = "uploads";   // folder on disk
+                staticFileConfig.directory = uploadsPath;   // folder on disk
                 staticFileConfig.location = Location.EXTERNAL; // external folder
             });
+
         }).start(SERVER_PORT);
 
+        // --------------------------
         // Exception handling
+        // --------------------------
         app.exception(ValidationException.class, (e, ctx) -> {
             ctx.status(400);
             ctx.json(Map.of(
@@ -75,10 +99,14 @@ public class Waarc {
             ));
         });
 
+        // --------------------------
         // Root endpoint
+        // --------------------------
         app.get("/", ctx -> ctx.html("<h1> Welcome to Wisdom Academy and Research Academy </h1>"));
 
+        // --------------------------
         // Initialize controllers
+        // --------------------------
         new AppConfig(app);
         new HomeController(app);
         new TeamController(app);
@@ -96,5 +124,7 @@ public class Waarc {
         new SiteSettingController(app);
         new AppExceptionHandler(app);
 
+        System.out.println("Server started at port: " + SERVER_PORT);
+        System.out.println("Uploads directory: " + uploadsPath);
     }
 }
