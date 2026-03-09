@@ -40,12 +40,12 @@ public class Waarc {
     );
 
     static {
-        // Use classpath-based log4j2.properties if available, fallback to default config
         var logConfigStream = Waarc.class.getClassLoader().getResourceAsStream("log4j2.properties");
+
         if (logConfigStream != null) {
-            Configurator.initialize(null, "log4j2.properties");
+            Configurator.initialize("WaarcLogger", "log4j2.properties");
         } else {
-            Configurator.initialize(null, null); // default config
+            Configurator.initialize((String) null, (String) null);
         }
     }
 

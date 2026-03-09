@@ -1,6 +1,5 @@
 package com.waarc.config;
 
-import com.waarc.log.Log;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -9,75 +8,83 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-/**
- * @author <sachin.singh@moco.com.np>
- * @created on : 15-02-2026 09:18
- */
 public class Config {
 
     private static final Logger LOG = LogManager.getLogger(Config.class);
-    private static final String CONFIG_FILE = "etc/config.properties"; // optional fallback
+
+    private static final String CLASSPATH_CONFIG = "config.properties";
+    private static final String FILESYSTEM_CONFIG = "etc/config.properties";
+
     private static Properties props;
 
-    /**
-     * Load config from file if exists, otherwise rely on environment variables
-     */
     private static void loadConfiguration() {
+
         props = new Properties();
 
-        // First, try to load from file
-        try (InputStream file = Config.class.getClassLoader().getResourceAsStream("config.properties")) {
-            if (file != null) {
-                props.load(file);
-                LOG.info("Configuration loaded from classpath config.properties");
-            } else {
-                LOG.warn("config.properties not found in classpath, relying on environment variables");
+        // 1️⃣ Try classpath (src/main/resources)
+        try (InputStream in = Config.class.getClassLoader().getResourceAsStream(CLASSPATH_CONFIG)) {
+
+            if (in != null) {
+                props.load(in);
+                LOG.info("Configuration loaded from classpath: {}", CLASSPATH_CONFIG);
+                return;
             }
+
         } catch (IOException e) {
-            Log log = new Log(Log.Status.FAILED, Log.Section.CONFIG,
-                    "Error while loading configuration file : " + e.getMessage());
-            LOG.error(log.toString());
+            LOG.error("Failed loading classpath config: {}", e.getMessage());
+        }
+
+        // 2️⃣ Try filesystem (etc/config.properties)
+        try (InputStream in = new FileInputStream(FILESYSTEM_CONFIG)) {
+
+            props.load(in);
+            LOG.info("Configuration loaded from file system: {}", FILESYSTEM_CONFIG);
+
+        } catch (IOException e) {
+            LOG.warn("No configuration file found. Falling back to environment variables.");
         }
     }
 
-    /**
-     * Get property by key, first from environment variables, then from loaded properties
-     */
     public static String getProperty(String key) {
-        // Check environment variables first
-        String envValue = System.getenv(key.toUpperCase().replace(".", "_"));
-        if (envValue != null && !envValue.isEmpty()) {
+
+        // 1️⃣ Environment variable override
+        String envKey = key.toUpperCase().replace(".", "_");
+        String envValue = System.getenv(envKey);
+
+        if (envValue != null && !envValue.isBlank()) {
             return envValue.trim();
         }
 
-        // Fallback to properties file
-        if (props == null || props.isEmpty()) {
+        // 2️⃣ Load config if not loaded
+        if (props == null) {
             loadConfiguration();
         }
 
+        // 3️⃣ Get from properties
         String value = props.getProperty(key);
+
         if (value != null) {
             return value.trim();
         }
 
-        LOG.warn("Property not found: " + key);
+        LOG.warn("Property not found: {}", key);
         return null;
     }
 
-    /**
-     * Get all properties for a section (optional)
-     */
     public static Properties getSectionProperties(String section) {
-        if (props == null || props.isEmpty()) {
+
+        if (props == null) {
             loadConfiguration();
         }
 
-        Properties p = new Properties();
-        props.forEach((key, value) -> {
-            if (key.toString().contains(section)) {
-                p.put(key, value);
+        Properties sectionProps = new Properties();
+
+        for (String key : props.stringPropertyNames()) {
+            if (key.contains(section)) {
+                sectionProps.put(key, props.getProperty(key));
             }
-        });
-        return p;
+        }
+
+        return sectionProps;
     }
 }
