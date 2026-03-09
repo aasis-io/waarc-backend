@@ -9,6 +9,7 @@ import java.util.Properties;
 
 public class DbConnection {
 
+    // Singleton holder pattern for lazy initialization
     private static class Singleton {
         private static final DbConnection INSTANCE = new DbConnection();
     }
@@ -16,80 +17,79 @@ public class DbConnection {
     private final BasicDataSource dataSource;
 
     private DbConnection() {
+        // Load DB properties from Config (env + .env)
+        Properties dbProps = Config.getSectionProperties("DB_");
 
-        Properties dbProps = Config.getSectionProperties("db_");
+        String server = Config.getProperty("DB_SERVER");
+        String port = Config.getProperty("DB_PORT");
+        String dbName = Config.getProperty("DB_NAME");
+        String user = Config.getProperty("DB_USER");
+        String password = Config.getProperty("DB_PASSWORD");
 
-        String server = get(dbProps, "db_server", "localhost");
-        String port = get(dbProps, "db_port", "3306");
-        String dbName = get(dbProps, "db_name", "");
-        String user = get(dbProps, "db_user", "root");
-        String password = get(dbProps, "db_password", "");
+        // fallback to defaults if missing
+        server = (server == null || server.isBlank()) ? "localhost" : server.trim();
+        port = (port == null || port.isBlank()) ? "3306" : port.trim();
+        user = (user == null) ? "root" : user.trim();
+        password = (password == null) ? "" : password.trim();
 
-        String url =
-                "jdbc:mysql://" + server + ":" + port + "/" + dbName +
-                        "?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=UTF-8";
+        if (dbName == null || dbName.isBlank()) {
+            throw new IllegalStateException("Database name (DB_NAME) is required!");
+        }
+
+        // JDBC URL for MySQL
+        String url = String.format(
+                "jdbc:mysql://%s:%s/%s?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=UTF-8",
+                server, port, dbName
+        );
 
         BasicDataSource ds = new BasicDataSource();
-
-        // Driver
         ds.setDriverClassName("com.mysql.cj.jdbc.Driver");
-
-        // DB connection
         ds.setUrl(url);
         ds.setUsername(user);
         ds.setPassword(password);
 
-        // Pool configuration
-        ds.setInitialSize(getInt(dbProps, "db_pool_initial_size", 5));
-        ds.setMaxTotal(getInt(dbProps, "db_pool_max_size", 20));
-        ds.setMaxIdle(getInt(dbProps, "db_pool_max_idle_size", 5));
-        ds.setMinIdle(getInt(dbProps, "db_pool_min_idle_size", 2));
+        // Pool configuration (with safe defaults)
+        ds.setInitialSize(getInt(dbProps, "DB_POOL_INITIAL_SIZE", 5));
+        ds.setMaxTotal(getInt(dbProps, "DB_POOL_MAX_SIZE", 20));
+        ds.setMaxIdle(getInt(dbProps, "DB_POOL_MAX_IDLE_SIZE", 5));
+        ds.setMinIdle(getInt(dbProps, "DB_POOL_MIN_IDLE_SIZE", 2));
 
-        ds.setMaxWait(Duration.ofMillis(getLong(dbProps, "db_pool_max_wait", 9000)));
+        ds.setMaxWaitMillis(getLong(dbProps, "DB_POOL_MAX_WAIT", 9000));
 
-        ds.setRemoveAbandonedTimeout(
-                Duration.ofSeconds(getInt(dbProps, "db_pool_remove_abandoned_timeout", 180))
-        );
+        ds.setRemoveAbandonedTimeout(getInt(dbProps, "DB_POOL_REMOVE_ABANDONED_TIMEOUT", 180));
+        ds.setRemoveAbandonedOnBorrow(getBoolean(dbProps, "DB_POOL_REMOVE_ABANDONED_ON_BORROW", true));
+        ds.setRemoveAbandonedOnMaintenance(getBoolean(dbProps, "DB_POOL_REMOVE_ABANDONED_ON_MAINTENANCE", true));
 
-        ds.setRemoveAbandonedOnBorrow(
-                Boolean.parseBoolean(get(dbProps, "db_pool_remove_abandoned_on_borrow", "true"))
-        );
-
-        ds.setRemoveAbandonedOnMaintenance(
-                Boolean.parseBoolean(get(dbProps, "db_pool_remove_abandoned_on_maintenance", "true"))
-        );
-
-        ds.setDurationBetweenEvictionRuns(
-                Duration.ofMillis(getLong(dbProps, "db_pool_time_between_eviction_runs_millis", 60000))
-        );
+        ds.setTimeBetweenEvictionRunsMillis(getLong(dbProps, "DB_POOL_TIME_BETWEEN_EVICTION_RUNS_MILLIS", 60000));
 
         this.dataSource = ds;
     }
 
+    /** Get a connection from the pooled datasource */
     public static Connection getCon() throws SQLException {
         return Singleton.INSTANCE.dataSource.getConnection();
     }
 
-    // -------- helpers --------
-
-    private static String get(Properties p, String key, String defaultValue) {
-        String v = p.getProperty(key);
-        return (v == null || v.isBlank()) ? defaultValue : v.trim();
-    }
-
+    // -------- Helper methods --------
     private static int getInt(Properties p, String key, int defaultValue) {
         try {
-            return Integer.parseInt(get(p, key, String.valueOf(defaultValue)));
-        } catch (Exception e) {
-            return defaultValue;
-        }
+            String v = Config.getProperty(key);
+            if (v != null && !v.isBlank()) return Integer.parseInt(v.trim());
+        } catch (Exception ignored) {}
+        return defaultValue;
     }
 
     private static long getLong(Properties p, String key, long defaultValue) {
         try {
-            return Long.parseLong(get(p, key, String.valueOf(defaultValue)));
-        } catch (Exception e) {
-            return defaultValue;
-        }
+            String v = Config.getProperty(key);
+            if (v != null && !v.isBlank()) return Long.parseLong(v.trim());
+        } catch (Exception ignored) {}
+        return defaultValue;
+    }
+
+    private static boolean getBoolean(Properties p, String key, boolean defaultValue) {
+        String v = Config.getProperty(key);
+        if (v != null && !v.isBlank()) return Boolean.parseBoolean(v.trim());
+        return defaultValue;
     }
 }

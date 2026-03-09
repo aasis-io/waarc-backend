@@ -1,2 +1,18 @@
-# Ignore secrets
+# Maven / Java build
+target/
+*.class
+*.jar
+*.war
+
+# IntelliJ / IDE
+.idea/
+*.iml
+out/
+
+# Logs
+*.log
+
+# Config / Secrets
+.env
+etc/config.properties
 target/classes/ga4-service-account.json
