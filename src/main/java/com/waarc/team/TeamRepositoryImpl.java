@@ -18,7 +18,7 @@ public class TeamRepositoryImpl implements TeamRepository {
 
     @Override
     public List<Team> getTeam() {
-        String sql = "SELECT * FROM Team";
+        String sql = "SELECT * FROM team";
         try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
 
@@ -48,7 +48,7 @@ public class TeamRepositoryImpl implements TeamRepository {
     @Override
     public String save(TeamRequest request) {
 
-        String sql = "INSERT INTO Team (image,name,position,location) values (?,?,?,?)";
+        String sql = "INSERT INTO team (image,name,position,location) values (?,?,?,?)";
         try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql);) {
 
@@ -72,7 +72,7 @@ public class TeamRepositoryImpl implements TeamRepository {
     @Override
     public String updateTeam(TeamRequest request) {
 
-        String sql = "UPDATE Team SET image = ?, name = ? , position = ? , location = ? where id = ?";
+        String sql = "UPDATE team SET image = ?, name = ? , position = ? , location = ? where id = ?";
         try (Connection conn = DbConnection.getCon(); PreparedStatement stmt = conn.prepareStatement(sql);) {
             stmt.setString(1, request.getImage());
             stmt.setString(2, request.getName());
@@ -96,7 +96,7 @@ public class TeamRepositoryImpl implements TeamRepository {
 
     @Override
     public Team getTeamById(String id) {
-        String sql = "SELECT * FROM Team where id = ? ";
+        String sql = "SELECT * FROM team where id = ? ";
         try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
             stmt.setString(1, id);
@@ -124,7 +124,7 @@ public class TeamRepositoryImpl implements TeamRepository {
 
     @Override
     public String deleteTeam(String id) {
-        String sql = "delete from Team where id = ? ";
+        String sql = "delete from team where id = ? ";
         try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
             stmt.setString(1, id);

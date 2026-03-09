@@ -17,7 +17,7 @@ public class HomeRepositoryImpl implements HomeRepository {
 
     @Override
     public Home getHome() {
-        String sql = "SELECT * FROM Home where id=1 ";
+        String sql = "SELECT * FROM home where id=1 ";
         try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
 
@@ -46,7 +46,7 @@ public class HomeRepositoryImpl implements HomeRepository {
     @Override
     public String save(HomeRequest request) {
 
-        String sql = "INSERT INTO Home (banner_image,page_title,page_sub_title,seo_title,seo_keywords,seo_description,id) values (?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO home (banner_image,page_title,page_sub_title,seo_title,seo_keywords,seo_description,id) values (?,?,?,?,?,?,?)";
         try (Connection conn = DbConnection.getCon();
              PreparedStatement stmt = conn.prepareStatement(sql);) {
 
@@ -73,7 +73,7 @@ public class HomeRepositoryImpl implements HomeRepository {
     @Override
     public String updateHome(HomeRequest request) {
 
-        String sql = "UPDATE Home SET banner_image = ?, page_title = ?, page_sub_title = ?, seo_title = ?, seo_keywords = ?, seo_description = ? WHERE id = ?";
+        String sql = "UPDATE home SET banner_image = ?, page_title = ?, page_sub_title = ?, seo_title = ?, seo_keywords = ?, seo_description = ? WHERE id = ?";
         try (Connection conn = DbConnection.getCon(); PreparedStatement stmt = conn.prepareStatement(sql);) {
             stmt.setString(1, request.getBannerImage());
             stmt.setString(2, request.getTitle());
@@ -100,7 +100,7 @@ public class HomeRepositoryImpl implements HomeRepository {
 
     @Override
     public Optional<Home> getHomeById(String id) {
-        String sql = "SELECT * FROM Home ";
+        String sql = "SELECT * FROM home ";
         try (Connection connection = DbConnection.getCon();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
 
