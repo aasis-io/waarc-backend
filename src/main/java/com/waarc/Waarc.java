@@ -1,6 +1,7 @@
 package com.waarc;
 
 import com.waarc.about.AboutController;
+import com.waarc.analytics.GA4Service;
 import com.waarc.blog.BlogController;
 import com.waarc.config.AppConfig;
 import com.waarc.config.Config;
@@ -18,6 +19,7 @@ import com.waarc.team.TeamController;
 import com.waarc.user.UserController;
 import com.waarc.work.WorkController;
 import com.waarc.analytics.AnalyticsController;
+import io.github.cdimascio.dotenv.Dotenv;
 import io.javalin.Javalin;
 import io.javalin.http.staticfiles.Location;
 import io.javalin.validation.ValidationException;
@@ -49,9 +51,11 @@ public class Waarc {
 
     public static void main(String[] args) {
 
-        // --------------------------
-        // Ensure uploads folder exists
-        // --------------------------
+        Dotenv dotenv = Dotenv.configure()
+                .ignoreIfMissing() // so it won't fail if no .env in production
+                .load();
+        System.out.println("GA4_KEY = " + dotenv.get("GA4_KEY"));
+
         String uploadsPath;
         if (System.getenv("RENDER") != null) {
             // Running on Render container
@@ -98,7 +102,6 @@ public class Waarc {
                     "details", e.getErrors()
             ));
         });
-
         // --------------------------
         // Root endpoint
         // --------------------------

@@ -16,3 +16,8 @@ out/
 .env
 etc/config.properties
 target/classes/ga4-service-account.json
+resources/ga4-service-account.json
+
+# Ignore GA4 service account JSON
+ga4-service-account.json
+ga4.json.b64
