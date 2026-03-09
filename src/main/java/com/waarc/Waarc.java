@@ -52,10 +52,8 @@ public class Waarc {
     public static void main(String[] args) {
 
         Dotenv dotenv = Dotenv.configure()
-                .ignoreIfMissing() // so it won't fail if no .env in production
+                .ignoreIfMissing()
                 .load();
-        System.out.println("GA4_KEY = " + dotenv.get("GA4_KEY"));
-
         String uploadsPath;
         if (System.getenv("RENDER") != null) {
             // Running on Render container
