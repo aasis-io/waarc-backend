@@ -29,7 +29,7 @@ import java.io.File;
 import java.util.Map;
 
 /**
- * Main class for Waarc Javalin backend
+ * Main class
  */
 public class Waarc {
 
